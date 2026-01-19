@@ -1,8 +1,32 @@
-// src/components/ExpertCare.jsx
-import React from 'react';
+
+
+// export default ExpertCare;
+
+import React, { useState, useRef } from 'react';
 import './ExpertCare.css';
 
 const ExpertCare = () => {
+  // --- SLIDER LOGIC ---
+  const [sliderPosition, setSliderPosition] = useState(50);
+  const containerRef = useRef(null);
+
+  const handleMove = (e) => {
+    if (!containerRef.current) return;
+    
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = (e.clientX || (e.touches && e.touches[0].clientX)) - rect.left;
+    const width = rect.width;
+    
+    let percent = (x / width) * 100;
+    percent = Math.max(0, Math.min(100, percent));
+    
+    setSliderPosition(percent);
+  };
+
+  // Image URLs (extracted from your code)
+  const imgBefore = "https://einstein-clients.imgix.net/3094/482385/original_before-Hair-Loss-Surgery-2249-Frontal-Midscalp-Restoration.jpg?1750452083=&auto=format&fit=max&auto=format&w=540&h=420";
+  const imgAfter = "https://einstein-clients.imgix.net/3094/482384/original_after-Hair-Loss-Surgery-2249-Frontal-Midscalp-Restoration.jpg?1750452083=&auto=format&fit=max&auto=format&w=540&h=420";
+
   return (
     <div className="expert-section">
       <div className="expert-container">
@@ -10,23 +34,32 @@ const ExpertCare = () => {
         {/* --- LEFT COLUMN: Images & Review --- */}
         <div className="expert-left">
           
-          {/* Before / After Images */}
-          <div className="ba-images-row">
-            <div className="ba-item">
-              <img 
-                src="https://einstein-clients.imgix.net/3094/482385/original_before-Hair-Loss-Surgery-2249-Frontal-Midscalp-Restoration.jpg?1750452083=&amp%3Bauto=format&amp%3Bfit=max&auto=format&w=540&h=420" 
-                alt="Before Hair Transplant" 
-              />
-              <span className="ba-tag">Before</span>
+          {/* --- NEW: SLIDER COMPONENT --- */}
+          <div 
+            className="expert-slider-container" 
+            ref={containerRef}
+            onMouseMove={handleMove}
+            onTouchMove={handleMove}
+          >
+            {/* 1. Base Image (AFTER) */}
+            <img src={imgAfter} alt="After" className="img-base" />
+            <span className="slider-label label-after">After</span>
+
+            {/* 2. Overlay Image (BEFORE) - Width changes dynamically */}
+            <div className="img-overlay" style={{ width: `${sliderPosition}%` }}>
+              <img src={imgBefore} alt="Before" />
+              <span className="slider-label label-before">Before</span>
             </div>
-            <div className="ba-item">
-              <img 
-                src="https://einstein-clients.imgix.net/3094/482384/original_after-Hair-Loss-Surgery-2249-Frontal-Midscalp-Restoration.jpg?1750452083=&amp%3Bauto=format&amp%3Bfit=max&auto=format&w=540&h=420" 
-                alt="After Hair Transplant" 
-              />
-              <span className="ba-tag">After</span>
+
+            {/* 3. Slider Handle */}
+            <div className="slider-handle" style={{ left: `${sliderPosition}%` }}>
+              <div className="handle-line"></div>
+              <div className="handle-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18-6-6 6-6"/><path d="m15 6 6 6-6 6"/></svg>
+              </div>
             </div>
           </div>
+          {/* --- END SLIDER --- */}
 
           <p className="ba-caption">
             Our advanced hair restoration solutions can give you natural-looking results.
@@ -56,7 +89,6 @@ const ExpertCare = () => {
 
           {/* Buttons */}
           <div className="expert-buttons">
-            
             <button className="expert-btn">
                <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -72,9 +104,6 @@ const ExpertCare = () => {
               </svg>
               CALL HERE
             </button>
-
-           
-
           </div>
 
         </div>

@@ -1,88 +1,161 @@
 /* src/components/ResultsSection.css */
 
 .results-section {
-  background-color: #f9f9f9; /* Light off-white background */
-  padding: 80px 5%;
+  background-color: #f9f9f9;
+  padding: 60px 5%; /* Padding thori kam ki */
   text-align: center;
 }
 
 .main-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
+  font-size: 36px; /* Heading size normal kiya */
   color: #222;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 /* --- GRID LAYOUT --- */
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 Columns */
-  gap: 50px; /* Cards ke beech faasla */
-  max-width: 1200px;
+  /* Auto-fit use kar rahe hain taake cards chote aur responsive rahain */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 30px; /* Gap kam kiya */
+  max-width: 1000px; /* Container width kam ki (1200 -> 1000) */
   margin: 0 auto;
 }
 
 /* --- CARD STYLING --- */
 .result-card {
   text-align: left;
-}
-
-/* Images Row (Side by Side) */
-.res-images-row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 25px;
-}
-
-.res-img-box {
-  position: relative;
-  flex: 1;
-}
-
-.res-img-box img {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  /* Card ka size compact rakhne ke liye max-width laga sakte hain (optional) */
+  max-width: 400px; 
+  margin: 0 auto; /* Center align if grid has extra space */
   width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: top center; /* Head par focus */
-  border-radius: 4px;
-  display: block;
 }
 
-/* Labels (Text Shadow wala clean look) */
-.res-tag {
+/* --- SLIDER HEIGHT (SMALLER) --- */
+.res-slider-container {
+  position: relative;
+  width: 100%;
+  height: 220px; /* Height kam kar di (pehle 300px thi) */
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+/* Base & Overlay Images */
+.res-slider-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  pointer-events: none;
+}
+
+.res-img-base { z-index: 0; }
+
+.res-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  z-index: 1;
+  border-right: 2px solid white;
+}
+
+/* Fix squishing */
+.res-img-overlay img {
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  height: 100%;
+}
+
+/* --- HANDLE & LABELS (Smaller) --- */
+.res-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px; /* Thora patla */
+  background: white;
+  z-index: 10;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.res-handle-circle {
+  width: 30px; /* Circle chota kiya */
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  color: #4db6ac;
+}
+.res-handle-circle svg { width: 16px; height: 16px; }
+
+.res-label {
   position: absolute;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
-  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 11px; /* Font chota kiya */
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.label-after { right: 10px; z-index: 0; }
+.label-before { left: 10px; z-index: 2; }
+
+
+/* --- TEXT CONTENT (Compact) --- */
+.res-text-content {
+  padding: 15px 20px; /* Padding kam ki */
 }
 
-/* Text Styling */
 .res-title {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 18px; /* Title size chota kiya (24 -> 18) */
   color: #222;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .res-desc {
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
+  font-size: 13px; /* Description size chota kiya (15 -> 13) */
+  line-height: 1.5;
+  color: #666;
 }
 
 /* --- MOBILE RESPONSIVE --- */
 @media screen and (max-width: 768px) {
   .results-grid {
-    grid-template-columns: 1fr; /* Mobile par 1 Column */
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  
+  .result-card {
+    max-width: 100%; /* Mobile pe full width */
   }
   
   .main-heading {
-    font-size: 36px;
+    font-size: 28px;
   }
 }

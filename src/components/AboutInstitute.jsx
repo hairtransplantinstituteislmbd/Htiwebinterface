@@ -18,7 +18,7 @@ const AboutInstitute = () => {
 
         {/* --- RIGHT SIDE: CONTENT --- */}
         <div className="ai-text-col">
-          <h2 className="ai-heading">Chicago Hair Institute</h2>
+          <h2 className="ai-heading">Hair Transplant Institute</h2>
           
           <p className="ai-desc">
             Dr. Raymond J. Konior and the team at the Chicago Hair Institute offer world-class treatment backed by over 30 years of expertise in the field of <Link to="/services" className="ai-link">hair restoration</Link>. Our doctors are nationally affiliated with professional associations including:
@@ -31,7 +31,7 @@ const AboutInstitute = () => {
           </ul>
 
           <p className="ai-contact-text">
-            To learn more or to schedule an appointment at our Chicago, IL, hair restoration clinic, <Link to="/contact" className="ai-link">contact us online</Link> or call <a href="tel:6309373449" className="ai-link">(630) 937-3449</a>.
+            To learn more or to schedule an appointment at our Chicago, IL, hair restoration clinic, <Link to="/contact" className="ai-link">contact us online</Link> or call <a href="tel:6309373449" className="ai-link">+92-300-9558737</a>.
           </p>
 
         </div>
