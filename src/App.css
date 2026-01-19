@@ -1,0 +1,13 @@
+/* src/App.css */
+body {
+  padding-top: 120px; /* Navbar ki height jitni jagah chorr di */
+  font-family: 'Lato', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Agar mobile par height kam hai to wahan padding bhi kam karein */
+@media screen and (max-width: 1000px) {
+  body {
+    padding-top: 90px;
+  }
+}

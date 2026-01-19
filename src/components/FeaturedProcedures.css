@@ -1,0 +1,169 @@
+/* src/components/FeaturedProcedures.css */
+
+.procedures-section {
+  background-color: #222; /* Dark Background */
+  color: white;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.procedures-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: stretch; /* IMPORTANT: Taake Image aur Text barabar height ke hon */
+}
+
+/* --- LEFT SIDE --- */
+.proc-text-col {
+  flex: 1;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Content ko vertically center rakhe */
+}
+
+.proc-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Grid for Links */
+.proc-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 20px;
+  margin-bottom: 60px; /* Testimonial se faasla */
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.1); /* Halka sa divider */
+}
+
+.proc-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bullet { color: white; font-size: 20px; }
+
+.proc-link {
+  color: #ddd;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  transition: 0.3s;
+}
+
+.proc-link:hover {
+  color: #4db6ac;
+  border-color: #4db6ac;
+}
+
+/* --- NEW TESTIMONIAL STYLING --- */
+.testi-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.testi-quote {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc; /* Thoda gray text */
+  margin-bottom: 15px;
+  font-style: italic;
+  max-width: 600px;
+}
+
+.testi-author {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.testi-stars {
+  text-decoration: underline;
+  color: #4db6ac; /* Teal color for link style */
+  font-weight: bold;
+}
+
+/* BUTTONS */
+.testi-buttons-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.proc-btn {
+  background-color: #4db6ac; /* Teal Background */
+  color: #000; /* Black Text */
+  border: none;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 4px; /* Slight round */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.proc-btn:hover {
+  background-color: #26a69a;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  font-size: 18px;
+}
+
+/* --- RIGHT SIDE IMAGE --- */
+.proc-img-col {
+  flex: 1;
+  /* Height auto kar di taake text ke hisaab se adjust ho */
+  min-height: 600px; 
+  position: relative;
+  align-items: center;
+}
+
+.proc-img-col img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0.8); 
+  border-radius: 5%;/* Thoda dark taake text pop ho agar overlapping ho */
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media screen and (max-width: 900px) {
+  .procedures-container {
+    flex-direction: column;
+  }
+  
+  .proc-text-col {
+    padding: 50px 5%;
+  }
+
+  .proc-links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testi-heading {
+    font-size: 36px;
+  }
+
+  .proc-img-col {
+    height: 400px;
+    min-height: auto;
+  }
+}

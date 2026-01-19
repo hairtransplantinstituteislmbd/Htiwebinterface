@@ -1,0 +1,188 @@
+/* src/components/DoctorDetail.css */
+
+.detail-page {
+  background-color: #222; /* Dark Theme */
+  color: white;
+  min-height: 100vh;
+  padding: 50px 5%;
+}
+
+.detail-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- TOP SECTION --- */
+.top-section {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-doc-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.detail-subtitle {
+  color: #4db6ac;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.detail-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin: 10px 0 30px;
+  line-height: 1.1;
+}
+
+.info-block {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 3px solid #4db6ac; /* Green line on left */
+}
+
+.info-block h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.info-block p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  color: #4db6ac;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #4db6ac;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #4db6ac;
+  color: white;
+}
+
+/* --- BEFORE & AFTER SECTION FIX --- */
+.case-study-section {
+  background-color: #2e2a28;
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.case-desc {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #bbb;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.before-after-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* src/components/DoctorDetail.css */
+
+/* --- CARD FIX --- */
+.ba-card {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  
+  /* White Box Khatam karne ke liye */
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  
+  /* Taake text image se bahar na bhagay */
+  overflow: hidden; 
+  border-radius: 8px;
+}
+
+/* src/components/DoctorDetail.css */
+
+/* --- IMAGE HEIGHT FIX --- */
+.ba-card img {
+  width: 100%;       /* Width poori le */
+  
+  /* HEIGHT FIX: Dono images ki height barabar karne ke liye */
+  height: 400px;     
+  
+  /* CROPPING: Taake image pichkay nahi, balkay fit ho jaye */
+  object-fit: cover; 
+  
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #444;
+  transition: transform 0.3s ease;
+}
+
+.ba-card:hover img {
+  transform: scale(1.02); /* Mouse le jane par thoda zoom ho */
+}
+
+/* --- LABEL FIX (TEXT KO NEECHAY LAYA) --- */
+.ba-label {
+  position: absolute;
+  
+  /* Change: Top ki bajaye Bottom par lagayen */
+  bottom: 15px; 
+  
+  /* Center karne ka tareeqa */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Styling */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background taake text parha jaye */
+  color: #fff;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 20px; /* Pill shape */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 10;
+  
+  /* Pointer events band karein taake text select na ho */
+  pointer-events: none;
+}

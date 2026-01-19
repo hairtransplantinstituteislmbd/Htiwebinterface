@@ -1,0 +1,74 @@
+/* src/components/Awards.css */
+
+/* Outer Container: Jo screen par nazar aata hai */
+.awards-section {
+  background-color: white;
+  padding: 30px 0;
+  width: 100%;
+  overflow: hidden; /* ZAROORI: Jo cheez container se bahar jaye wo chup jaye */
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* The Track: Yeh lamba container hai jo actually move karega */
+.awards-track {
+  display: flex;
+  width: max-content; /* Jitnay logos hain utni width le */
+  
+  /* Animation apply kar rahe hain */
+  /* 'scroll' animation ka naam hai, '30s' speed hai (jitna bara number utna slow) */
+  /* 'linear' ka matlab hai speed aik jaisi rahay, 'infinite' matlab chalta rahay */
+  animation: scroll 30s linear infinite;
+}
+
+/* Individual Lists */
+.awards-list {
+  display: flex;
+  align-items: center;
+  /* Gap hum yahan padding ke zariye denge taake animation smooth rahay */
+}
+
+/* Individual Logo Styling */
+.award-logo {
+  max-height: 70px; /* Height adjust ki */
+  width: auto;
+  object-fit: contain;
+  
+  /* Logos ke darmiyan faasla (Gap) */
+  padding: 0 30px; /* Left aur Right side par 30px padding */
+  
+  /* Optional: Pehle black & white */
+  transition: filter 0.3s ease;
+  /* Ab hover effect remove kar diya kyunke chalti cheez par hover mushkil hota hai */
+}
+
+/* Optional: Agar chahein ke hover karne par rangin ho jayein */
+/* .awards-track:hover .award-logo {
+  filter: grayscale(0%);
+} */
+
+
+/* --- THE ANIMATION KEYFRAMES --- */
+@keyframes scroll {
+  0% {
+    /* Start position */
+    transform: translateX(0);
+  }
+  100% {
+    /* End position: Track ko apni total width ka 50% left move karo */
+    /* Kyunke humne content double kiya hai, 50% move karne par wo wapis pehli position par lagay ga */
+    transform: translateX(-50%);
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 768px) {
+  .award-logo {
+    max-height: 50px; /* Mobile par chotay logos */
+    padding: 0 15px;  /* Mobile par kam gap */
+  }
+  
+  /* Mobile par speed thodi tez kar sakte hain agar chahein */
+  .awards-track {
+    animation-duration: 20s; 
+  }
+}

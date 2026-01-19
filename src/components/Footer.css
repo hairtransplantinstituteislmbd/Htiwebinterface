@@ -1,0 +1,92 @@
+/* src/components/Footer.css */
+
+/* --- TOP SECTION --- */
+.footer-top {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #222;
+  margin: 0;
+}
+
+/* Social Icons Row */
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* The Circle Wrapper */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #009688; /* Teal Border */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #009688; /* Icon Color */
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-circle:hover {
+  background-color: #009688;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* --- BOTTOM SECTION --- */
+.footer-bottom {
+  background-color: #f2f2f2; /* Light Grey Background */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #555;
+  border-top: 1px solid #e0e0e0;
+}
+
+.disclaimer {
+  font-size: 13px;
+  max-width: 900px;
+  margin: 0 auto 25px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-nav {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Links Styling */
+.footer-link {
+  color: #009688;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #00796b;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 600px) {
+  .footer-heading {
+    font-size: 32px;
+  }
+}

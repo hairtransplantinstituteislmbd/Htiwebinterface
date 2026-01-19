@@ -1,0 +1,177 @@
+/* src/components/InfoSection.css */
+
+/* --- GENERAL RESET --- */
+.info-section-wrapper {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+/* ================= SECTION 1: TOP SPLIT (FIXED ALIGNMENT) ================= */
+.info-split-container {
+  display: flex; 
+  width: 100%;
+  flex-wrap: wrap; 
+  /* Dono columns ki height barabar rakhne ke liye */
+  align-items: stretch; 
+}
+
+.info-half {
+  flex: 1; 
+  padding: 30px 5%; /* Padding adjust ki */
+  box-sizing: border-box;
+    justify-content: space-between;
+  /* Text alignment fix */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Background Colors */
+.left-half { background-color: #f9f9f9; }
+.right-half { background-color: #f4f4f4; }
+
+/* Typography */
+.serif-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  color: #222;
+  
+  /* Heading ki min-height set karein taake agar aik line ho to bhi barabar rahay */
+  min-height: 96px; 
+  display: flex;
+  align-items: flex-end; /* Text neechay align ho image ke pass */
+}
+
+.info-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* --- IMAGE ALIGNMENT MAGIC (Fixing Heights) --- */
+
+/* LEFT SIDE IMAGE CONTAINER */
+.ba-images-row {
+  display: flex;
+  gap: 0px;
+  margin-bottom: 0px;
+  
+  /* FIX HEIGHT: Dono taraf same height honi chahiye */
+  height: 280px; 
+  width: 100%;
+}
+
+.ba-img-box {
+  flex: 1;
+  position: relative;
+  height: 100%; /* Parent ki height le */
+}
+
+.ba-img-box img {
+  width: 100%;
+  height: 100%; /* Stretch to fill box */
+  object-fit: cover; /* Image katey na, adjust ho jaye */
+  display: block;
+}
+
+/* RIGHT SIDE IMAGE CONTAINER */
+.consult-img-wrapper {
+  margin-bottom: 30px;
+  
+  /* FIX HEIGHT: Bilkul Left side jitni */
+  height: 280px; 
+  width: 100%;
+}
+
+.consult-img-wrapper img {
+  width: 100%;
+  height: 100%; /* Fill container */
+  object-fit: cover; /* Crop to fit perfectly */
+  display: block;
+  object-position: top center; /* Chehra nazar aye */
+}
+
+
+.ba-label {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Size & look */
+  font-size: 14px;          /* 🔽 text small */
+  font-weight: 600;
+  padding: 6px 16px;        /* 🔽 compact */
+  border-radius: 20px;      /* pill shape */
+
+  /* Colors */
+  color: white;
+  background: rgba(0, 0, 0, 0.65);
+
+  /* Extras */
+  white-space: nowrap;
+  text-shadow: none;
+}
+
+.info-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;        /* 🔥 THIS IS THE KEY */
+  justify-content: flex-end;
+   margin-top: 0;   /* ensure koi extra gap na ho */
+  padding-top: 0;
+}
+
+/* ... SECTION 2 & 3 CODE SAME RAHAY GA ... */
+/* (Neechay wahi purana code copy paste kar dein ya waisa hi rehne dein) */
+
+/* ================= SECTION 2: TESTIMONIAL ================= */
+.testimonial-section {
+  padding: 10px 10px;
+  background-color: #fff;
+  text-align: center;
+}
+.testimonial-container { max-width: 900px; margin: 0 auto; }
+.quote-text {
+  font-family: 'Playfair Display', serif; font-style: italic; font-size: 26px; color: #333; margin-bottom: 20px;
+}
+.author-text { font-size: 18px; color: #666; margin-bottom: 40px; }
+.teal-link { color: #4db6ac; text-decoration: underline; }
+.action-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.btn-teal {
+  background-color: #4db6ac; color: white; border: none; padding: 15px 35px;
+  font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: 0.3s;
+}
+.btn-teal:hover { background-color: #00897b; }
+
+/* ================= SECTION 3: DARK BOXES ================= */
+.why-choose-section { background-color: #f7f7f7; padding: 60px 5%; }
+.centered-heading {
+  text-align: center; font-family: 'Playfair Display', serif; font-size: 48px; margin-bottom: 50px; color: #333;
+}
+.cards-grid {
+  display: flex; flex-direction: row; justify-content: space-between; align-items: stretch;
+  gap: 30px; max-width: 1200px; margin: 0 auto;
+}
+.dark-card {
+  flex: 1; width: 100%; background-color: #444; padding: 50px 30px;
+  text-align: center; color: white; box-sizing: border-box; display: flex; flex-direction: column;
+}
+.dark-card h3 { font-family: 'Playfair Display', serif; font-size: 30px; margin-bottom: 20px; color: #fff; }
+.dark-card p { font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.6; color: #ddd; }
+.dark-card a { color: #4db6ac; text-decoration: none; border-bottom: 1px solid #4db6ac; }
+.dark-card a:hover { color: white; border-bottom-color: white; }
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 900px) {
+  .info-split-container, .cards-grid { flex-direction: column; }
+  .info-half { padding: 40px 20px; }
+  
+  /* Mobile par height auto kar dein taake image kateri na */
+  .ba-images-row, .consult-img-wrapper { height: auto; min-height: 250px; }
+  .serif-heading { min-height: auto; font-size: 32px; }
+}

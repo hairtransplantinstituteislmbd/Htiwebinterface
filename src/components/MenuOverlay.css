@@ -1,0 +1,156 @@
+/* src/components/MenuOverlay.css */
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 990;
+  background-color: #fcfcfc;
+  overflow: hidden; 
+  animation: slideDown 0.4s ease-out;
+}
+
+/* --- SCROLL AREA --- */
+.menu-scroll-wrapper {
+  height: 100%;
+  overflow-y: auto; 
+  
+  padding-top: 130px; 
+  
+  /* Padding hata di kyunke ab hum Spacer Div use kar rahe hain */
+  padding-bottom: 0px; 
+  
+  /* Box sizing ensure karta hai ke padding height mein count ho */
+  box-sizing: border-box;
+
+  /* Scrollbar Hide */
+  scrollbar-width: none; 
+}
+.menu-scroll-wrapper::-webkit-scrollbar {
+  display: none; 
+}
+
+/* --- BOTTOM BLUR (FIXED) --- */
+.menu-bottom-fade {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; 
+  
+  background: linear-gradient(to top, 
+              #fcfcfc 20%,                 
+              rgba(252, 252, 252, 0) 100%  
+  );
+  
+  pointer-events: none; 
+  z-index: 1000;
+}
+
+/* --- FOOTER BUTTON --- */
+/* src/components/MenuOverlay.css */
+
+/* --- FOOTER BUTTON (BROWN) --- */
+.menu-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  width: 100%;
+  
+  /* Ensure karein ke ye visible ho */
+  position: relative;
+  z-index: 1002; 
+}
+
+.view-all-services {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 800; /* Extra Bold */
+  
+  /* --- COLOR CHANGE: Brown --- */
+  color: #11d3ed; /* SaddleBrown Color */
+  
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.view-all-services:hover {
+  /* Hover par thoda Dark Brown */
+  color: #040505; 
+  transform: translateY(-2px);
+}
+
+/* --- BAKI CSS SAME HAI --- */
+.menu-content {
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 0; 
+  padding: 0 5%;
+}
+
+.menu-column { flex: 1; text-align: center; padding: 0; }
+
+.menu-image-container {
+  width: 100%; height: 240px; overflow: hidden; margin-bottom: 30px;
+  border-right: 2px solid #fff;
+}
+.menu-column:last-child .menu-image-container { border-right: none; }
+
+.menu-image-container img {
+  width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease;
+}
+.menu-column:hover .menu-image-container img { transform: scale(1.05); }
+
+.menu-header {
+  font-family: 'Lato', sans-serif; font-size: 26px; color: #555;
+  font-weight: 400; margin-bottom: 25px; padding: 0 15px;
+}
+
+.menu-list { list-style: none; padding: 0 20px; margin: 0; }
+.menu-list li { border-bottom: 1px solid #eee; }
+.menu-list li:first-child { border-top: 1px solid #eee; }
+.menu-list a {
+  display: block; padding: 15px 0; text-decoration: none;
+  color: #009B92; font-family: 'Lato', sans-serif; font-size: 16px; transition: all 0.2s;
+}
+.menu-list a:hover { color: #000; background-color: #f9f9f9; }
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 900px) {
+  .menu-content { flex-direction: column; gap: 40px; }
+  .menu-image-container { border-right: none; height: 200px; }
+}
+
+/* src/components/MenuOverlay.css */
+
+/* --- BOTTOM DECORATION (GRADIENT) --- */
+.menu-bottom-decoration {
+  width: 100%;
+  height: 250px; /* Kaafi jagah taake button upar rahay */
+  
+  /* SOFT ELEGANT GRADIENT */
+  /* Upar White (invisible) -> Neechay Light Warm Beige */
+  background: linear-gradient(to bottom, 
+              rgba(255, 255, 255, 0) 0%,   /* Start Transparent/White */
+              #e0993d 100%);               /* End with Light Beige */
+              
+  margin-top: 20px;
+}
+
+/* --- Baki classes same rahengi --- */
+/* Ensure karein ke 'menu-scroll-wrapper' ki padding-bottom 0 ho */
+.menu-scroll-wrapper {
+  /* ... purani settings ... */
+  padding-bottom: 0px; 
+}

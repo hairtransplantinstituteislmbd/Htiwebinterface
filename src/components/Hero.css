@@ -1,0 +1,203 @@
+/* src/components/Hero.css */
+
+.hero-section {
+  position: relative;
+  background-color: #1a1a1a;
+  background-image: linear-gradient(to right, rgba(30, 30, 30, 0.98) 0%, rgba(30, 30, 30, 0.8) 50%, rgba(30, 30, 30, 0.4) 100%), 
+                    url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2144&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center bottom;
+  background-blend-mode: luminosity;
+  color: white;
+  
+  /* Height thodi munasib rakhi taake image fit aaye */
+  min-height: 500px; 
+  height: auto;
+  
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  /* Relative zaroori hai taake hum iske andar cheezon ko fix kar sakein */
+  position: relative; 
+  
+  display: flex;
+  width: 86%;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center; /* Text Vertically Center hoga */
+  height: 100%;
+  min-height: 500px; /* Container ko bhi height di */
+}
+
+/* --- TEXT SECTION --- */
+.hero-text {
+  flex: 1;
+  max-width: 700px; /* Width limit ki taake image ke upar na charhay */
+  z-index: 2; /* Text image ke upar rahay */
+  margin-top: 0;
+}
+
+.hero-text h4 {
+  color: #fff7f7;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  line-height: 1.1;
+  margin-top: 0;      /* Ye sab se zaroori line hai */
+  padding-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: rgb(255, 251, 251);
+}
+
+.features-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ddd;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+.feature span {
+  display: block;
+}
+
+.border-left {
+  border-left: 1px solid rgb(21, 177, 249);
+  padding-left: 30px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-teal {
+  background: linear-gradient(90deg, #6BECE1 0%, #92E8E7 100%);
+  color: #111;
+  border: none;
+  padding: 0 30px;
+  min-width: 180px;
+  height: 70px;
+  border-radius: 4px;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(61, 200, 185, 0.2);
+  transition: all 0.2s ease;
+}
+
+.btn-call {
+  gap: 10px;
+}
+
+.btn-call svg {
+  width: 34px;
+  height: 34px;
+  stroke: #1b1a1a;
+  stroke-width: 2.5px;
+}
+
+.btn-teal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgb(198, 255, 249);
+  filter: brightness(1.05);
+}
+
+/* --- IMAGE SECTION (ABSOLUTE POSITIONING) --- */
+/* Ye hai wo trick jo image ko perfect jagah par rakhegi */
+.hero-image {
+  position: absolute; /* Hawa mein fix kiya */
+  bottom: 0;          /* Bilkul neeche */
+  right: 0;           /* Bilkul right side */
+  height: 90%;        /* Section ki 90% height le */
+  z-index: 1;         /* Text ke neeche rahay */
+  
+  display: flex;
+  align-items: flex-end; /* Image tag ko bottom align kiya */
+}
+
+.hero-image img {
+  height: 100%;       /* Container ki poori height le */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(-10px 0 20px rgba(0,0,0,0.5));
+}
+
+/* --- RESPONSIVE (Mobile par wapis normal kar do) --- */
+@media screen and (max-width: 1000px) {
+  .hero-section {
+    min-height: auto;
+    padding: 50px 0;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    position: static; /* Absolute positioning khatam */
+  }
+
+  .hero-text {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+  
+  .features-row {
+    justify-content: center;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-teal {
+    width: 100%;
+  }
+
+  /* Mobile Image Reset */
+  .hero-image {
+    position: relative; /* Wapis normal flow mein */
+    height: auto;
+    width: 100%;
+    right: auto;
+    bottom: auto;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: -50px; /* Thoda neeche stick karne ke liye */
+  }
+
+  .hero-image img {
+    height: auto;
+    max-height: 400px;
+  }
+}

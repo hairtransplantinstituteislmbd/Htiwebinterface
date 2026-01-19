@@ -1,0 +1,102 @@
+/* src/components/LocationSection.css */
+
+.location-section {
+  background-color: white;
+  width: 100%;
+}
+
+.loc-container {
+  display: flex;
+  min-height: 550px; /* Section ki height fix ki taake Map lamba ho */
+}
+
+/* --- LEFT SIDE: TEXT --- */
+.loc-info-col {
+  flex: 1;
+  padding: 60px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.loc-city {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #009688; /* Teal Heading */
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.loc-address p {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #444;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.loc-hours {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* --- BUTTONS --- */
+.loc-buttons {
+  width: 100%;
+  max-width: 350px; /* Buttons ki choraai (width) limit ki */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Buttons ke beech faasla */
+}
+
+.loc-btn-link {
+  text-decoration: none;
+  width: 100%;
+}
+
+.loc-btn {
+  width: 100%;
+  padding: 15px;
+  /* Screenshot jaisa Teal Gradient */
+  background: linear-gradient(90deg, #4db6ac, #26a69a); 
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+.loc-btn:hover {
+  opacity: 0.9;
+}
+
+/* --- RIGHT SIDE: MAP --- */
+.loc-map-col {
+  flex: 1;
+  min-height: 400px; /* Mobile par kam se kam itna uncha ho */
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 900px) {
+  .loc-container {
+    flex-direction: column;
+  }
+
+  .loc-info-col {
+    padding: 60px 20px;
+  }
+
+  .loc-map-col {
+    height: 400px; /* Mobile par map ki height fixed */
+  }
+}
