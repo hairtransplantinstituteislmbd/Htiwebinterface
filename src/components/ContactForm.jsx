@@ -6,7 +6,7 @@ import './ContactForm.css';
 const ContactForm = () => {
   const [status, setStatus] = useState('');
   
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxvvlaJqHt9DvWctJ-gmrxQC722zDk34azNhrqQNvolkqPEi1XYTLKXny6WlaFh_ZTd/exec"; 
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzvmR0kGHaBcdV9FnXu_SMn0WT9OY3RGPIGd4va4zJE6J2tdQ6rCh8dzYlluPWvA6GN/exec"; 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,7 +44,7 @@ const ContactForm = () => {
           <div>
             <h2 className="info-heading">Contact Us</h2>
             <p className="info-sub">
-              Not sure what you need? The team at Chicago Hair Institute will be happy to listen to you and suggest ideas you hadn't considered.
+              Not sure what you need? The team at Islamabad Hair Institute will be happy to listen to you and suggest ideas you hadn't considered.
             </p>
           </div>
 

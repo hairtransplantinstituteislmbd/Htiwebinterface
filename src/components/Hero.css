@@ -10,7 +10,6 @@
   background-blend-mode: luminosity;
   color: white;
   
-  /* Height thodi munasib rakhi taake image fit aaye */
   min-height: 500px; 
   height: auto;
   
@@ -21,23 +20,21 @@
 }
 
 .container {
-  /* Relative zaroori hai taake hum iske andar cheezon ko fix kar sakein */
   position: relative; 
-  
   display: flex;
   width: 86%;
   max-width: 1600px;
   margin: 0 auto;
-  align-items: center; /* Text Vertically Center hoga */
+  align-items: center;
   height: 100%;
-  min-height: 500px; /* Container ko bhi height di */
+  min-height: 500px;
 }
 
 /* --- TEXT SECTION --- */
 .hero-text {
   flex: 1;
-  max-width: 700px; /* Width limit ki taake image ke upar na charhay */
-  z-index: 2; /* Text image ke upar rahay */
+  max-width: 700px;
+  z-index: 2;
   margin-top: 0;
 }
 
@@ -55,7 +52,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 60px;
   line-height: 1.1;
-  margin-top: 0;      /* Ye sab se zaroori line hai */
+  margin-top: 0;
   padding-top: 10px;
   margin-bottom: 30px;
   font-weight: 400;
@@ -92,10 +89,19 @@
   align-items: center;
 }
 
+/* --- YAHAN CHANGE KIYA HAI --- */
 .btn-teal {
   background: linear-gradient(90deg, #6BECE1 0%, #92E8E7 100%);
   color: #111;
-  border: none;
+  border: none; /* Link tag mein border nahi hoti, par safety ke liye rehne dein */
+  
+  /* Link tag height/width tabhi leta hai jab display block ya flex ho */
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  
+  text-decoration: none; /* Link ke neeche wali line hatane ke liye */
+  
   padding: 0 30px;
   min-width: 180px;
   height: 70px;
@@ -104,12 +110,11 @@
   font-weight: 500;
   letter-spacing: 0.5px;
   font-family: 'Lato', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(61, 200, 185, 0.2);
   transition: all 0.2s ease;
+  box-sizing: border-box; /* Padding ko height mein adjust karne ke liye */
 }
 
 .btn-call {
@@ -121,35 +126,35 @@
   height: 34px;
   stroke: #1b1a1a;
   stroke-width: 2.5px;
+  display: block; /* Kabhi kabhi svg text flow mein tang karta hai */
 }
 
 .btn-teal:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgb(198, 255, 249);
   filter: brightness(1.05);
+  color: #111; /* Hover par color change na ho */
 }
 
-/* --- IMAGE SECTION (ABSOLUTE POSITIONING) --- */
-/* Ye hai wo trick jo image ko perfect jagah par rakhegi */
+/* --- IMAGE SECTION --- */
 .hero-image {
-  position: absolute; /* Hawa mein fix kiya */
-  bottom: 0;          /* Bilkul neeche */
-  right: 0;           /* Bilkul right side */
-  height: 90%;        /* Section ki 90% height le */
-  z-index: 1;         /* Text ke neeche rahay */
-  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 90%;
+  z-index: 1;
   display: flex;
-  align-items: flex-end; /* Image tag ko bottom align kiya */
+  align-items: flex-end;
 }
 
 .hero-image img {
-  height: 100%;       /* Container ki poori height le */
+  height: 100%;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(-10px 0 20px rgba(0,0,0,0.5));
 }
 
-/* --- RESPONSIVE (Mobile par wapis normal kar do) --- */
+/* --- RESPONSIVE --- */
 @media screen and (max-width: 1000px) {
   .hero-section {
     min-height: auto;
@@ -161,7 +166,7 @@
     flex-direction: column;
     width: 85%;
     align-items: center;
-    position: static; /* Absolute positioning khatam */
+    position: static;
   }
 
   .hero-text {
@@ -181,19 +186,19 @@
   }
   
   .btn-teal {
-    width: 100%;
+    width: 100%; /* Mobile par full width */
+    box-sizing: border-box; /* Padding add hone par width na phate */
   }
 
-  /* Mobile Image Reset */
   .hero-image {
-    position: relative; /* Wapis normal flow mein */
+    position: relative;
     height: auto;
     width: 100%;
     right: auto;
     bottom: auto;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: -50px; /* Thoda neeche stick karne ke liye */
+    margin-bottom: -50px;
   }
 
   .hero-image img {

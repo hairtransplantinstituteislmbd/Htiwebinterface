@@ -1,6 +1,7 @@
 
 import React, { useState, useRef } from 'react'; // useState aur useRef import karein
 import './InfoSection.css';
+import { Link } from 'react-router-dom';
 
 // --- PLACEHOLDER IMAGES ---
 const beforeImg = "https://einstein-clients.imgix.net/3094/482333/original_before-hair-loss-surgery-4210-graft-hair-restoration.jpg?1750441507=&auto=format&fit=max&auto=format&w=1102&h=840"; 
@@ -105,9 +106,9 @@ const InfoSection = () => {
             – BMO, <a href="#" className="teal-link">5-Star Review</a>
           </p>
           <div className="action-buttons">
-            <button className="btn-teal btn-call">
+           <Link to="/contact" className="btn-teal btn-call">
               CALL OUR OFFICE
-            </button>
+            </Link>
           </div>
         </div>
       </div>

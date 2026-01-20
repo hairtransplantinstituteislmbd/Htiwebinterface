@@ -9,7 +9,7 @@ const LocationSection = () => {
         
         {/* --- LEFT COLUMN: INFO --- */}
         <div className="loc-info-col">
-          <h2 className="loc-city">Oakbrook Terrace</h2>
+          <h2 className="loc-city">F-6/2 Islamabad</h2>
           
           <div className="loc-address">
             <p>Plot No 10,</p>
