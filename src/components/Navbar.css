@@ -34,11 +34,14 @@
 /* src/components/Navbar.css */
 
 /* --- CONTAINER: Image Left, Text Right --- */
+/* Navbar.css ya Header.css */
+
 .logo-container {
-  display: flex;
-  align-items: right; /* Vertical Center */
-  gap: 0px;           /* Image aur Text ke beech faasla */
-  cursor: pointer;
+    display: flex;       /* Make sure karein layout na toote */
+    align-items: center;
+    text-decoration: none; /* Link wali underline hatane ke liye */
+    color: inherit;      /* Jo color pehle tha wahi rahe, blue na ho */
+    cursor: pointer;     /* Hath wala nishan aye */
 }
 
 /* --- IMAGE SIZE --- */

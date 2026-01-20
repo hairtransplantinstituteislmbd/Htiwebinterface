@@ -10,6 +10,7 @@ import ServiceDetail from './components/ServiceDetail';
 import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';
 import VideoPage from './components/VideoPage';
+import LocationSection from './components/LocationSection';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import './App.css';
@@ -30,8 +31,9 @@ function App() {
         <Route path="/gallery" element={<GalleryChoice />} />
         <Route path="/gallery/:type" element={<GalleryDetail />} />
         <Route path="/service/:id" element={<ServiceDetail />} />
-<Route path="/videos" element={<VideoPage />} />
-<Route path="/contact" element={<ContactForm />} />
+        <Route path="/videos" element={<VideoPage />} />
+        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/location" element={<LocationSection />} />
 
       </Routes>
        {location.pathname !== '/contact' && (
