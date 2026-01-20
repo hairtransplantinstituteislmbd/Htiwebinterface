@@ -31,7 +31,7 @@ const AboutInstitute = () => {
           </ul>
 
           <p className="ai-contact-text">
-            To learn more or to schedule an appointment at our Chicago, IL, hair restoration clinic, <Link to="/contact" className="ai-link">contact us online</Link> or call <a href="tel:6309373449" className="ai-link">+92-300-9558737</a>.
+            To learn more or to schedule an appointment at our Chicago, IL, hair restoration clinic, <Link to="/contact" className="ai-link" onClick={() => window.scrollTo(0, 0)}>contact us online</Link> or call <a href="tel:6309373449" className="ai-link">+92-300-9558737</a>.
           </p>
 
         </div>

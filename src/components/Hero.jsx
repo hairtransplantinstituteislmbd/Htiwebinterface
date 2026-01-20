@@ -28,7 +28,7 @@ const Hero = () => {
          <div className="hero-buttons">
             
             {/* Button 1: Ab ye Link ban gya hai jo Contact page par le jayega */}
-            <Link to="/contact" className="btn-teal btn-call">
+            <Link to="/contact" className="btn-teal btn-call" onClick={() => window.scrollTo(0, 0)}>
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 width="12" height="12" 

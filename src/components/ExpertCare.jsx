@@ -88,7 +88,7 @@ const ExpertCare = () => {
 
           {/* Buttons */}
           <div className="expert-buttons">
-           <Link to="/contact" className="btn-teal btn-call">
+           <Link to="/contact" className="btn-teal btn-call" onClick={() => window.scrollTo(0, 0)}>
               CALL OUR OFFICE
             </Link>
           </div>

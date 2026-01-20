@@ -40,7 +40,7 @@ const FeaturedProcedures = () => {
 
             {/* Buttons */}
             <div className="testi-buttons-row">
-             <Link to="/contact" className="btn-teal btn-call">
+             <Link to="/contact" className="btn-teal btn-call" onClick={() => window.scrollTo(0, 0)}>
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 width="24" height="24" 
