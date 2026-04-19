@@ -2,6 +2,9 @@
 import React, { useState, useRef } from 'react'; // useState aur useRef import karein
 import './InfoSection.css';
 import { Link } from 'react-router-dom';
+import AyazLaghariAfter from '../Images/Ayaz Laghari FUTFUE After.webp'; 
+import AyazLaghariBefore from '../Images/Ayaz Laghari FUTFUE Before.webp'; 
+
 
 // --- PLACEHOLDER IMAGES ---
 const beforeImg = "https://einstein-clients.imgix.net/3094/482333/original_before-hair-loss-surgery-4210-graft-hair-restoration.jpg?1750441507=&auto=format&fit=max&auto=format&w=1102&h=840"; 
@@ -45,12 +48,12 @@ const InfoSection = () => {
             onTouchMove={handleMove} // Mobile support
           >
             {/* 1. Background Image (AFTER - Full Width) */}
-            <img src={afterImg} alt="After" className="img-base" />
+            <img src={AyazLaghariAfter} alt="After" className="img-base" />
             <span className="slider-label label-after">After</span>
 
             {/* 2. Foreground Image (BEFORE - Width controlled by slider) */}
             <div className="img-overlay" style={{ width: `${sliderPosition}%` }}>
-              <img src={beforeImg} alt="Before" />
+              <img src={AyazLaghariBefore} alt="Before" />
               <span className="slider-label label-before">Before</span>
             </div>
 
@@ -66,10 +69,10 @@ const InfoSection = () => {
 
           <div className="info-text-wrapper">
             <p className="info-text">
-              This 48-year-old man received 4,201 grafts from Dr. Raymond J. Konior over two sessions. Patients who demand natural-looking hair restoration results like these turn to Chicago Hair Institute.
+              This 42-year-old man named AyazLaghari achieved a dense, youthful transformation with 2,850 grafts performed by Dr. Humayon By focusing on high-density placement along the frontal hairline and temple peaks, we’ve restored a look that is indistinguishable from natural growth.
             </p>
             <p className="info-text">
-              Dr. Konior and Dr. Sahar Nadimi personally perform the most advanced procedures to give you the hairline and confidence you deserve.
+             Dr. Humayon personally perform the most advanced procedures to give you the hairline and confidence you deserve.
             </p>
           </div>
 
@@ -85,10 +88,10 @@ const InfoSection = () => {
 
           <div className="info-text-wrapper">
             <p className="info-text">
-              Chicago Hair Institute makes it incredibly easy to explore your options from home with a virtual consultation. No travel. No stress.
+              Hair Tranplant Institute Islamabad makes it incredibly easy to explore your options from home with a virtual consultation. No travel. No stress.
             </p>
             <p className="info-text">
-              Our process starts with simple photos and a quick form about your hair loss history, goals, and concerns. Dr. Konior and Dr. Nadimi personally review your information to create a custom plan.
+              Our process starts with simple photos and a quick form about your hair loss history, goals, and concerns. Dr. Humayon personally review your information to create a custom plan.
             </p>
           </div>
         </div>

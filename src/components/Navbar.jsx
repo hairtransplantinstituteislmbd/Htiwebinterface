@@ -32,7 +32,7 @@ const Navbar = () => {
     <div style={{width: '100%', background: 'white', position: 'sticky', top: 0, zIndex: 1000}}>
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         
-        {/* --- LOGO --- */}
+      
         <Link to="/" className="logo-container" onClick={handleLinkClick}>
             <img src={logo} alt="Logo" className="nav-logo-img" />
             <div className="logo-text-wrapper">

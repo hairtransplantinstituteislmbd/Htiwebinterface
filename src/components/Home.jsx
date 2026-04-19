@@ -22,8 +22,8 @@ const Home = () => {
       <ExpertCare />
       <ResultsSection />
       <FeaturedProcedures />
-       <AboutInstitute />
-       <LocationSection />
+      <AboutInstitute />
+      <LocationSection />
        
        
     </>

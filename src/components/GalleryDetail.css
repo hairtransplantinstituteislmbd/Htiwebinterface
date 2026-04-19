@@ -8,80 +8,113 @@
 
 .gd-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
-.gd-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  color: #222;
-  margin-bottom: 15px;
-}
-
-.gd-header p {
-  color: #666;
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.gd-back-btn {
-  text-decoration: none;
-  color: #4db6ac;
-  font-weight: bold;
-  border: 1px solid #4db6ac;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: 0.3s;
-}
-
-.gd-back-btn:hover {
-  background-color: #4db6ac;
-  color: white;
-}
-
-/* GRID */
+/* GRID SETUP - Cards ko center karne ke liye */
 .gd-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
   margin: 0 auto;
+  justify-items: center; 
 }
 
 .gd-card {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-.gd-img-row {
-  display: flex;
-  gap: 10px;
-}
-
-.gd-img-box {
-  position: relative;
-  flex: 1;
-}
-
-.gd-img-box img {
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
   width: 100%;
-  height: 250px;
+  max-width: 350px; /* Width ko control karne ke liye */
+}
+
+/* TALL SLIDER CONTAINER */
+.res-slider-container {
+  position: relative;
+  width: 100%;
+  /* Length barhanay ke liye aspect ratio change kiya */
+  aspect-ratio: 10 / 12; 
+  max-height: 450px; /* Height barha di gayi */
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: ew-resize;
+  user-select: none;
+  background-color: #fff;
+  container-type: inline-size; 
+}
+
+/* IMAGES STYLING */
+.res-img-base, .res-img-overlay-item {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: top center;
-  border-radius: 5px;
+  /* Top 10% focus rakha hai taake hair results clear nazar aayein */
+  object-position: center 10%; 
   display: block;
 }
 
-.gd-tag {
+.res-img-overlay {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  border-right: 2px solid white;
+}
+
+.res-img-overlay-item {
+  width: 100cqw; /* Stationary image trick */
+  max-width: none;
+}
+
+/* Labels & Handle */
+.res-label {
+  position: absolute;
+  bottom: 12px;
+  padding: 3px 10px;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 4px 12px;
-  font-size: 12px;
-  border-radius: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  z-index: 10;
+}
+.label-before { left: 12px; }
+.label-after { right: 12px; }
+
+.res-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: white;
+  z-index: 5;
+}
+
+.res-handle-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.gd-info {
+  padding: 12px 0 5px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
 }

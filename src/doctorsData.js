@@ -1,11 +1,13 @@
 // src/doctorsData.js
 
+
+import AyazLaghariAfter from './Images/DrHumayonSaeed.webp'; 
 export const doctors = [
   {
-    id: "raymond-konior",
-    name: "Dr. Raymond Konior",
+    id: "Humayon-Saeed",
+    name: "Dr. Humayon Saeed",
     title: "Founder & Medical Director",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&auto=format&fit=crop&q=60", // Main Image
+    image: AyazLaghariAfter, // Main Image
     
     shortBio: "A Chicago native, Dr. Konior graduated with honors from the University of Illinois.",
     journey: "Dr. Konior's journey began over 30 years ago when he recognized the lack of artistic precision in hair restoration. He dedicated his career to mastering the 'ultra-refined' follicular unit grafting technique.",

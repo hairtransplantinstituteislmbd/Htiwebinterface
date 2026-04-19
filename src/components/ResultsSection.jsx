@@ -3,50 +3,59 @@
 
 import React, { useState, useRef } from 'react';
 import './ResultsSection.css';
+import ChWajahatBefore from '../Images/Ch Wajahat FUE After.webp'; 
+import ChWajahatAfter from '../Images/Ch Wajahat FUE Before.webp'; 
+import MasabAnwarAfter from '../Images/Masab Anwar FUE After.webp'; 
+import MasabAnwarBefore from '../Images/Masab Anwar FUE Before.webp'; 
+import MuhammadSaadAfter from '../Images/Muhammad Saad After.webp'; 
+import MuhammadSaadBefore from '../Images/Muhammad Saad Before.webp'; 
+import NaveedMalikAfter from '../Images/Naveed Malik After.webp'; 
+import NaveedMalikBefore from '../Images/Naveed Malik Before.webp'; 
+import RanaNaveedAfter from '../Images/Rana Naveed After.webp'; 
+import RanaNaveedBefore from '../Images/Rana Naveed Before.webp'; 
+import RashidJanjuaAfter from '../Images/Rashid Janjua FUE After.webp'; 
+import RashidJanjuaBefore from '../Images/Rashid Janjua FUE Before.webp'; 
+
+
 
 const resultsData = [
   {
     id: 1,
     title: "Full Scalp Restoration",
     desc: "This 34-year-old man underwent a 3,665-graft hair restoration, designed to rebuild the frontal hairline and extend coverage.",
-    before: "https://einstein-clients.imgix.net/3094/482391/original_before-Hair-Loss-Surgery-3665-Full-Scalp-Restoration.jpg?1750455416=&auto=format&fit=max&auto=format&w=540&h=420",
-    after: "https://einstein-clients.imgix.net/3094/482390/original_after-Hair-Loss-Surgery-3665-Full-Scalp-Restoration.jpg?1750455416=&auto=format&fit=max&auto=format&w=540&h=420"
-  },
+     before: ChWajahatBefore ,
+    after: ChWajahatAfter },
   {
     id: 2,
     title: "Front Temporal Restoration",
     desc: "This 28-year-old patient received 4,086 grafts over three sessions to restore thinning hair in the frontal and crown areas.",
-    before: "https://einstein-clients.imgix.net/3094/482449/original_before-Hair-Loss-Surgery-4086-Graft-Staged-Frontotemporal-Restoration.jpg?1750698130=&auto=format&fit=max&auto=format&w=540&h=420",
-    after: "https://einstein-clients.imgix.net/3094/482448/original_after-Hair-Loss-Surgery-4086-Graft-Staged-Frontotemporal-Restoration.jpg?1750698130=&auto=format&fit=max&auto=format&w=540&h=420"
+    before: MasabAnwarBefore ,
+    after: MasabAnwarAfter
   },
   {
     id: 3,
     title: "Hairline Advancement",
     desc: "This 49-year-old woman underwent a 2,141 graft dense-pack procedure to lower her high hairline and enhance thinning frontotemporal areas.",
-    before: "https://einstein-clients.imgix.net/3094/482450/original_before-Hair-Loss-Surgery-2141-Female-Frontal-Hairline-Advancement-Using-Dense-Pack-Grafting.jpg?1750698204=&auto=format&fit=max&auto=format&w=540&h=420",
-    after: "https://einstein-clients.imgix.net/3094/482451/original_after-Hair-Loss-Surgery-2141-Female-Frontal-Hairline-Advancement-Using-Dense-Pack-Grafting.jpg?1750698204=&auto=format&fit=max&auto=format&w=540&h=420"
-  },
+     before: MuhammadSaadBefore ,
+    after: MuhammadSaadAfter },
   {
     id: 4,
     title: "Frontal Midscalp Restoration",
     desc: "This patient underwent a two-session hair restoration totaling 4,563 grafts to create a natural hairline and boost density.",
-    before: "https://einstein-clients.imgix.net/3094/482455/original_before-Hair-Loss-Surgery-4563-Graft-Frontal-Midscalp-Restoration.jpg?1750701444=&auto=format&fit=max&auto=format&w=540&h=420",
-    after: "https://einstein-clients.imgix.net/3094/482454/original_after-Hair-Loss-Surgery-4563-Graft-Frontal-Midscalp-Restoration.jpg?1750701443=&auto=format&fit=max&auto=format&w=540&h=420"
-  },
+     before: NaveedMalikBefore ,
+    after: NaveedMalikAfter },
    {
     id: 5,
     title: "Hairline Advancement",
     desc: "This 49-year-old woman underwent a 2,141 graft dense-pack procedure to lower her high hairline and enhance thinning frontotemporal areas.",
-    before: "https://einstein-clients.imgix.net/3094/482450/original_before-Hair-Loss-Surgery-2141-Female-Frontal-Hairline-Advancement-Using-Dense-Pack-Grafting.jpg?1750698204=&auto=format&fit=max&auto=format&w=540&h=420",
-    after: "https://einstein-clients.imgix.net/3094/482451/original_after-Hair-Loss-Surgery-2141-Female-Frontal-Hairline-Advancement-Using-Dense-Pack-Grafting.jpg?1750698204=&auto=format&fit=max&auto=format&w=540&h=420"
-  },
+    before: RanaNaveedBefore ,
+    after: RanaNaveedAfter  },
    {
     id: 6,
     title: "Hairline Advancement",
     desc: "This 49-year-old woman underwent a 2,141 graft dense-pack procedure to lower her high hairline and enhance thinning frontotemporal areas.",
-    before: "https://einstein-clients.imgix.net/3094/482450/original_before-Hair-Loss-Surgery-2141-Female-Frontal-Hairline-Advancement-Using-Dense-Pack-Grafting.jpg?1750698204=&auto=format&fit=max&auto=format&w=540&h=420",
-    after: "https://einstein-clients.imgix.net/3094/482451/original_after-Hair-Loss-Surgery-2141-Female-Frontal-Hairline-Advancement-Using-Dense-Pack-Grafting.jpg?1750698204=&auto=format&fit=max&auto=format&w=540&h=420"
-  }
+    before: RashidJanjuaBefore ,
+    after: RashidJanjuaAfter  },
 ];
 
 // --- SUB-COMPONENT FOR INDIVIDUAL SLIDERS ---
