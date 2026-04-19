@@ -41,9 +41,9 @@ const DoctorDetail = () => {
               <Link to="/" className="back-btn">← Back to Home</Link>
             </div> */}
 
-            <div className="image-content">
+            {/* <div className="image-content">
               <img src={doc.image} alt={doc.name} className="main-doc-img" />
-            </div>
+            </div> */}
           </div>
 
           {/* --- BOTTOM SECTION: BEFORE & AFTER --- */}

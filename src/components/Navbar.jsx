@@ -36,18 +36,15 @@ const Navbar = () => {
         <Link to="/" className="logo-container" onClick={handleLinkClick}>
             <img src={logo} alt="Logo" className="nav-logo-img" />
             <div className="logo-text-wrapper">
+              
                 <div className="logo-main">
-    <span className="brand-title-signature">Dr. </span>
-    <span className="brand-title-signature">Humayun's</span>
-</div>
-                <div className="logo-main">
-                    <span className="logo-bold">HAIR</span>
-                    <span className="logo-thin">TRANSPLANT</span>
+                    <span className="logo-bold">DR.</span>
+                    <span className="logo-bold">HUMAYUN'S</span>
                 </div>
                 <div className="logo-bottom">
-                    <span className="line-left"></span>
-                    <span className="logo-sub">INSTITUTE</span>
-                    <span className="line-right"></span>
+                    {/* <span className="line-left"></span> */}
+                    <span className="logo-sub">HAIR TRANSPLANT INSTITUTE</span>
+                    {/* <span className="line-right"></span> */}
                 </div>
             </div>
         </Link>

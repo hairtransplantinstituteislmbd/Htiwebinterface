@@ -1,5 +1,5 @@
 /* src/components/Navbar.css */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 /* --- MAIN NAVBAR CONTAINER --- */
 .navbar {
   display: flex;
@@ -31,17 +31,14 @@
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 /* --- CONTAINER: Row mein rakho (Image Left, Text Right) --- */
-/* src/components/Navbar.css */
-
-/* --- CONTAINER: Image Left, Text Right --- */
-/* Navbar.css ya Header.css */
 
 .logo-container {
     display: flex;       /* Make sure karein layout na toote */
     align-items: center;
     text-decoration: none; /* Link wali underline hatane ke liye */
     color: inherit;      /* Jo color pehle tha wahi rahe, blue na ho */
-    cursor: pointer;     /* Hath wala nishan aye */
+    cursor: pointer;  
+       /* Hath wala nishan aye */
 }
 
 /* --- IMAGE SIZE --- */
@@ -80,27 +77,24 @@
   align-items: center;
   justify-content: space-between; /* Lines ko faila dega */
   width: 100%;
-  margin-top: 4px; /* Upar wali line se faasla */
+  margin-top: 2px; /* Upar wali line se faasla */
 }
 
-.line-left, .line-right {
-  height: 1px;
-  background-color: #333;
-  flex: 1; /* Line auto width legi */
-}
+
 
 .logo-sub {
   font-family: 'Lato', sans-serif;
-  font-size: 11px;
-  letter-spacing: 3px; /* Institute text khula khula */
-  margin: 0 8px;
+  font-size: 7px;
+/* Institute text khula khula */
+  /* margin: 0 2px; */
+  margin-right: 0;
   color: #555;
-  font-weight: 600;
+  font-weight: 200;
   text-transform: uppercase;
 }
 /* Scroll par gap kam karein */
 .navbar.scrolled .logo-main {
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 
 .logo-bold {
@@ -108,7 +102,7 @@
   font-size: 25px;
   font-weight: 900;
   letter-spacing: 2px;
-  color: #81bcef;
+  color: #0e0f0f;
   text-transform: uppercase;
   transition: all 0.4s ease;
 }
@@ -117,7 +111,7 @@
   font-family: 'Lato', sans-serif;
   font-size: 25px;
   font-weight: 300;
-  color: #47c4d2;
+  color: #000000;
   transition: all 0.4s ease;
 }
 
@@ -132,7 +126,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 3px;
   width: 100%;
   opacity: 1;
   transition: all 0.4s ease;
@@ -141,21 +135,15 @@
 .logo-sub {
   font-family: 'Lato', sans-serif;
   font-size: 11px;
-  letter-spacing: 7px;
+  letter-spacing: 2px;
   font-weight: 700;
-  color: #f92f2f;
+  color: #0b0808;
   text-transform: uppercase;
   margin-right: -7px;
   transition: all 0.4s ease;
 }
 
-.line-left, .line-right {
-  height: 1px;
-  background-color: #222;
-  flex-grow: 1;
-  max-width: 30px;
-  transition: all 0.4s ease;
-}
+
 
 /* Scroll par Institute line settings */
 .navbar.scrolled .logo-bottom {
@@ -165,7 +153,7 @@
 
 .navbar.scrolled .logo-sub {
   font-size: 9px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   margin-right: -3px;
 }
 
@@ -227,31 +215,7 @@
   transform: scale(1.05);
 }
 
-/* Main Wrapper */
-.brand-logo-container {
-    display: flex;
-    align-items: baseline; /* Baseline taake fonts ki alignment neechay se barabar rahay */
-    gap: 10px;
-}
 
-/* "Dr." Class */
-.brand-title-bold {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 800;
-    font-size: 28px;
-    color: #ff5353;
-}
-
-/* "Humayun's" Class - The Image 1 Style */
-.brand-title-signature {
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px; /* Signature style fonts thore baray achay lagtay hain */
-    font-weight: 400;
-    color: #73C2FB;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Thora depth denay k liye */
-    display: inline-block;
-    transform: translateY(5px); /* Cursive font ko alignment mein lanay k liye thora neechay shift kiya */
-}
 
 /* --- RESPONSIVE --- */
 @media screen and (max-width: 1000px) {

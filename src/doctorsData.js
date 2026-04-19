@@ -1,13 +1,14 @@
 // src/doctorsData.js
 
 
-import AyazLaghariAfter from './Images/DrHumayonSaeed.webp'; 
+import DrHumayonSaeed from './Images/DrHumayonSaeed.webp'; 
+import SecondDoctor from './Images/SecondDoctor.webp'; 
 export const doctors = [
   {
     id: "Humayon-Saeed",
     name: "Dr. Humayon Saeed",
     title: "Founder & Medical Director",
-    image: AyazLaghariAfter, // Main Image
+    image: DrHumayonSaeed, // Main Image
     
     shortBio: "A Chicago native, Dr. Konior graduated with honors from the University of Illinois.",
     journey: "Dr. Konior's journey began over 30 years ago when he recognized the lack of artistic precision in hair restoration. He dedicated his career to mastering the 'ultra-refined' follicular unit grafting technique.",
@@ -20,9 +21,9 @@ export const doctors = [
   },
   {
     id: "sahar-nadimi",
-    name: "Dr. Sahar Nadimi",
+    name: "Dr. Unknown Name",
     title: "Hair Restoration Surgeon",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&auto=format&fit=crop&q=60",
+    image: SecondDoctor,
     
     shortBio: "Dr. Nadimi is a double board-certified facial plastic surgeon specialized in hair restoration.",
     journey: "Dr. Nadimi combines the eye of an artist with the precision of a surgeon. She started her career focusing on facial aesthetics, which gave her a unique advantage in designing natural hairlines.",

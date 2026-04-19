@@ -144,7 +144,7 @@
   /* Image ko upar move karne ke liye bottom ko 0 se barha kar thora positive dain */
   bottom: 0px; 
   right: 20px; /* Right se thora gap taake balance lage */
-  height: 95%; /* Height thori barha di taake image bari lage */
+  height: 115%; /* Height thori barha di taake image bari lage */
   z-index: 1;
   display: flex;
   align-items: flex-end;
