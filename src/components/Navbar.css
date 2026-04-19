@@ -1,5 +1,5 @@
 /* src/components/Navbar.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 /* --- MAIN NAVBAR CONTAINER --- */
 .navbar {
   display: flex;
@@ -225,6 +225,32 @@
 .menu-btn:hover {
   color: #000000 !important;
   transform: scale(1.05);
+}
+
+/* Main Wrapper */
+.brand-logo-container {
+    display: flex;
+    align-items: baseline; /* Baseline taake fonts ki alignment neechay se barabar rahay */
+    gap: 10px;
+}
+
+/* "Dr." Class */
+.brand-title-bold {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: #ff5353;
+}
+
+/* "Humayun's" Class - The Image 1 Style */
+.brand-title-signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px; /* Signature style fonts thore baray achay lagtay hain */
+    font-weight: 400;
+    color: #73C2FB;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Thora depth denay k liye */
+    display: inline-block;
+    transform: translateY(5px); /* Cursive font ko alignment mein lanay k liye thora neechay shift kiya */
 }
 
 /* --- RESPONSIVE --- */

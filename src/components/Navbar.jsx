@@ -37,6 +37,10 @@ const Navbar = () => {
             <img src={logo} alt="Logo" className="nav-logo-img" />
             <div className="logo-text-wrapper">
                 <div className="logo-main">
+    <span className="brand-title-signature">Dr. </span>
+    <span className="brand-title-signature">Humayun's</span>
+</div>
+                <div className="logo-main">
                     <span className="logo-bold">HAIR</span>
                     <span className="logo-thin">TRANSPLANT</span>
                 </div>
