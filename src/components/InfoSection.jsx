@@ -4,12 +4,12 @@ import './InfoSection.css';
 import { Link } from 'react-router-dom';
 import AyazLaghariAfter from '../Images/Ayaz Laghari FUTFUE After.webp'; 
 import AyazLaghariBefore from '../Images/Ayaz Laghari FUTFUE Before.webp'; 
-
+import DrHumayonSurical from '../Images/Dr_Humayun_PIc.webp'; 
 
 // --- PLACEHOLDER IMAGES ---
 const beforeImg = "https://einstein-clients.imgix.net/3094/482333/original_before-hair-loss-surgery-4210-graft-hair-restoration.jpg?1750441507=&auto=format&fit=max&auto=format&w=1102&h=840"; 
 const afterImg = "https://einstein-clients.imgix.net/3094/482334/original_after-hair-loss-surgery-4210-graft-hair-restoration.jpg?1750441507=&auto=format&fit=max&auto=format&w=1102&h=840";
-const laptopMan = "https://einstein-clients.imgix.net/3094/482877/original.jpg?1751498962=&auto=format&fit=max&auto=format&w=1000&h=375";
+const laptopMan = DrHumayonSurical;
 
 const InfoSection = () => {
   // --- SLIDER LOGIC ---
@@ -126,11 +126,11 @@ const InfoSection = () => {
           </div>
           <div className="dark-card">
             <h3>Expertise</h3>
-            <p><a href="#">Dr. Konior</a> combines world-class surgical training with decades of hair restoration expertise.</p>
+            <p><a href="#">Dr. Humayon</a> combines world-class surgical training with decades of hair restoration expertise.</p>
           </div>
           <div className="dark-card">
             <h3>Results</h3>
-            <p>Dr. Konior and <a href="#">Dr. Nadimi</a> approach hair restoration as an art form. <br/><br/><a href="#">See their natural-looking results in our gallery.</a></p>
+            <p>Dr. Humayon and <a href="#">Dr. Shahrukh</a> approach hair restoration as an art form. <br/><br/><a href="#">See their natural-looking results in our gallery.</a></p>
           </div>
         </div>
       </div>

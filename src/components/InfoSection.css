@@ -50,10 +50,10 @@
  /* Ya jo bhi aapki images ka ratio hai */
   
     position: relative;
-    width: 100%;
-    height: 350px; 
+    width: 90%;
+    aspect-ratio: 1 / 1; 
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     cursor: ew-resize;
     border-radius: 4px;
     user-select: none;
@@ -152,7 +152,8 @@
 /* --- RIGHT SIDE IMAGE (Consultation) --- */
 .consult-img-wrapper {
   margin-bottom: 30px;
-  height: 350px; /* Match slider height */
+  height: 250px;
+  min-height: 500px; /* Match slider height */
   width: 100%;
 }
 

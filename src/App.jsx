@@ -12,7 +12,7 @@ import ContactForm from './components/ContactForm';
 import VideoPage from './components/VideoPage';
 import LocationSection from './components/LocationSection';
 import { Routes, Route, useLocation } from 'react-router-dom';
-
+import WhatsAppWidget from './components/WhatsAppWidget';
 import './App.css';
 
 function App() {
@@ -40,6 +40,7 @@ function App() {
         <ContactForm /> 
       )}
         <Footer />
+        <WhatsAppWidget />
     </div>
   );
 }

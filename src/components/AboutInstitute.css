@@ -22,7 +22,7 @@
 /* --- IMAGE STYLING (FIXED HERE) --- */
 /* Ye code ab Media Query se bahar hai, isliye Desktop par chalega */
 .ai-image-col img {
-  width: 110%;
+  width: 90%;
   
   /* HEIGHT FIX: Force 600px height on Desktop */
   height: 400px; 

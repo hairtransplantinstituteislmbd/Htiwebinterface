@@ -31,7 +31,7 @@ const FeaturedProcedures = () => {
             <h2 className="testi-heading">“Do yourself the favor.”</h2>
             
             <p className="testi-quote">
-              “If you are like me, wondering the pros and cons of undergoing hair restoration. Just stop wondering, stop questioning! Do yourself the favor and get it done by Dr Raymond Konior! Im 200% certain... he is the guy you need.” 
+              “If you are like me, wondering the pros and cons of undergoing hair restoration. Just stop wondering, stop questioning! Do yourself the favor and get it done by Dr Humayon ! Im 200% certain... he is the guy you need.” 
             </p>
             
             <p className="testi-author">

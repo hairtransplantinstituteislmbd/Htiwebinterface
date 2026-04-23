@@ -3,16 +3,17 @@
 
 import DrHumayonSaeed from './Images/DrHumayonSaeed.webp'; 
 import SecondDoctor from './Images/SecondDoctor.webp'; 
+import DrZahra from './Images/Dr_Zahra_Aslam-removebg-preview.webp';
 export const doctors = [
   {
     id: "Humayon-Saeed",
-    name: "Dr. Humayon Saeed",
+    name: "Dr. Humayon ",
     title: "Founder & Medical Director",
     image: DrHumayonSaeed, // Main Image
     
-    shortBio: "A Chicago native, Dr. Konior graduated with honors from the University of Illinois.",
-    journey: "Dr. Konior's journey began over 30 years ago when he recognized the lack of artistic precision in hair restoration. He dedicated his career to mastering the 'ultra-refined' follicular unit grafting technique.",
-    education: "He earned his medical degree from the University of Illinois and completed a residency in Head & Neck Surgery at Northwestern University. He is also a diplomate of the American Board of Facial Plastic Surgery.",
+    shortBio: "Dr. Humayun Mohmand is an internationally renowned Plastic, Cosmetic, and Hair Restoration Surgeon, widely recognized for his precision, innovation, and excellence in aesthetic medicine. With decades of experience, he has earned global trust for delivering refined, natural-looking results. His expertise in hairline design and advanced aesthetic procedures, combined with a patient-first philosophy, ensures personalized treatments in a safe and premium clinical environment.",
+    journey: "Dr. Humayun Mohmand is a member of the Royal College of Surgeons of Edinburgh and holds multiple international certifications in plastic, cosmetic, and hair restoration surgery. His extensive training and global affiliations reflect his commitment to maintaining the highest standards of medical excellence and staying at the forefront of modern techniques.",
+    education: "Dr. Humayun Mohmand is a member of the Royal College of Surgeons of Edinburgh and holds multiple international certifications in plastic, cosmetic, and hair restoration surgery. His extensive training and global affiliations reflect his commitment to maintaining the highest standards of medical excellence and staying at the forefront of modern techniques.",
     
     // --- UPDATED WORKING IMAGES ---
     beforeImage: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=600&auto=format&fit=crop&q=60", // Man before
@@ -21,13 +22,13 @@ export const doctors = [
   },
   {
     id: "sahar-nadimi",
-    name: "Dr. Unknown Name",
+    name: "Dr. Zahra Aslam",
     title: "Hair Restoration Surgeon",
-    image: SecondDoctor,
+    image: DrZahra,
     
-    shortBio: "Dr. Nadimi is a double board-certified facial plastic surgeon specialized in hair restoration.",
-    journey: "Dr. Nadimi combines the eye of an artist with the precision of a surgeon. She started her career focusing on facial aesthetics, which gave her a unique advantage in designing natural hairlines.",
-    education: "She completed her training in Otolaryngology followed by a prestigious fellowship in Facial Plastic and Reconstructive Surgery. She is double board-certified.",
+    shortBio: "Dr. Zahra Aslam is an award-winning and board-certified Plastic Cosmetic and Hair Restoration Surgeon, known for her expertise in advanced hair restoration procedures. She is dedicated to delivering safe, effective, and personalized treatments, helping patients restore not only their hair but also their confidence. Her work reflects a strong commitment to excellence, precision, and natural-looking results.",
+    journey: "With a patient-centered approach, Dr. Zahra has built her career around modern and innovative hair restoration techniques. She specializes in procedures such as FUE, FUT, Hybrid Hair Transplants, PRP Therapy, and regenerative treatments. Over the years, she has developed a reputation for achieving natural hairlines, optimal density, and long-lasting outcomes by combining advanced medical knowledge with aesthetic detail.",
+    education: "Dr. Zahra Aslam holds an MBBS degree along with an MS in Plastic & Reconstructive Surgery. She is also an active member of the Hair Restoration Society, staying updated with the latest advancements and best practices in her field.",
     
     // --- UPDATED WORKING IMAGES ---
     beforeImage: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&auto=format&fit=crop&q=60", // Woman before
@@ -36,13 +37,13 @@ export const doctors = [
   },
   {
     id: "dr-ali",
-    name: "Dr. Ali",
+    name: "Dr. Shahrukh",
     title: "Hair Transplant Specialist",
-    image: "https://einstein-clients.imgix.net/3094/490503/original_Dr-Qutaibah-Khatib.png?1761156394=&amp%3Bauto=format&amp%3Bfit=max&auto=format&w=1920&h=2430",
+    image: SecondDoctor,
     
-    shortBio: "Dr. Ali brings years of experience in dermatological surgery and advanced hair restoration.",
-    journey: "Driven by a passion for technology, Dr. Ali was one of the early adopters of Robotic Hair Restoration in the region. He believes in using technology to minimize patient discomfort.",
-    education: "Dr. Ali holds a medical degree from King Edward Medical University and completed specialized training in dermatological surgery in London.",
+    shortBio: "Dr. Shahrukh is a dedicated and skilled medical professional known for delivering high-quality patient care and maintaining strong standards of safety and satisfaction. With a unique blend of clinical expertise and management knowledge, he focuses on providing modern, effective, and patient-centered treatment solutions while contributing positively to the healthcare field.",
+    journey: "Throughout his career, Dr. Shahrukh has emphasized advanced medical treatments and continuous improvement in patient care. He has developed a strong interest in hair transplant procedures, consistently refining his skills to stay aligned with the latest techniques and innovations. Alongside his clinical work, he has built expertise in healthcare management, strategic planning, and operational efficiency, enabling him to enhance patient experiences and implement effective systems within healthcare settings.",
+    education: "Dr. Shahrukh holds an MBBS degree and has further specialized by completing an MBA in Hair Transplant Management, combining medical knowledge with professional expertise in healthcare administration.",
     
     // --- UPDATED WORKING IMAGES ---
     beforeImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=60", 

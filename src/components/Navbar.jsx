@@ -58,7 +58,21 @@ const Navbar = () => {
                 <Link to="/videos" onClick={handleLinkClick}>VIDEO</Link>
             </li>
             
-            <li className="phone-link">+92(321)5321974</li>
+            {/* <li className="phone-link">+92(321)5000242</li> */}
+            
+
+
+            <li className="phone-link">
+  <a 
+    href="https://wa.me/923215000242" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '8px' }}
+  >
+    {/* Agar aap icon lagana chahen to yahan FaWhatsapp add kar saktay hain */}
+    +92(321)5000242
+  </a>
+</li>
             
             <li>
                 <Link to="/location" onClick={handleLinkClick}>Location</Link>

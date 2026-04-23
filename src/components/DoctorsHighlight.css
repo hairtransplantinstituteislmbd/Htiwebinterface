@@ -7,18 +7,19 @@
 .dr-section {
   /* Brownish-Dark Gradient Background */
   background: linear-gradient(135deg, #4b423d 0%, #2e2a28 100%);
-  padding: 80px 5%;
+  padding: 10px 5%;
+ 
   margin-bottom: 40px;
   border-bottom: 1px solid #555; /* Section separator line */
   color: white;
   width: 80%;          /* Screen ka 90% hissa lega (baki 10% gap) */
-  max-width: 1300px;   /* Bohot bari screen par hadd se zyada na phaile */
-  margin: 0 auto 40px auto; /* Top:0, Left/Right:Auto (Center), Bottom:40px */
+  max-width: 1000px;   /* Bohot bari screen par hadd se zyada na phaile */
+  margin: 0 auto 20px auto; /* Top:0, Left/Right:Auto (Center), Bottom:40px */
   border-radius: 20px;
 }
 
 .dr-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -86,6 +87,8 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: flex-start; /* Is se picture container ke top se chipak jayegi */
+
 }
 
 .dr-img {
@@ -106,7 +109,5 @@
     font-size: 38px;
   }
 
-  .dr-img {
-    margin-top: 30px;
-  }
+  
 }
