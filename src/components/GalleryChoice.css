@@ -1,82 +1,90 @@
 /* src/components/GalleryChoice.css */
 
 .gallery-choice-section {
-  padding: 80px 5%;
+  padding: 60px 5%;
   text-align: center;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 
 .gallery-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  margin-bottom: 50px;
+  font-size: clamp(32px, 5vw, 48px); /* Responsive font size */
+  margin-bottom: 40px;
   color: #222;
 }
 
 .gallery-choice-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  max-width: 1200px;
+  gap: 20px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .choice-card {
   flex: 1;
-  min-width: 300px;
   text-decoration: none;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  border-radius: 12px; /* Thora modern rounded corners */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background: #fff;
+  transition: all 0.3s ease;
 }
 
 .choice-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
 .choice-img-wrapper {
   position: relative;
-  height: 500px; /* Long Vertical Card */
   width: 100%;
+  /* Yeh image ko 4:3 ratio mein rakhega, na zyada lambi na zyada wide */
+  aspect-ratio: 4 / 3; 
+  overflow: hidden;
 }
 
 .choice-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Stretch nahi hone dega */
+  object-position: center 20%; /* Top se thora focus rakhega taake hair line nazar aaye */
   transition: transform 0.5s ease;
 }
 
 .choice-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08); /* Light zoom on hover */
 }
 
-/* Text Overlay at Bottom */
+/* Overlay Design */
 .choice-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 30px 20px;
-  /* Gradient taake text saaf parha jaye */
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-  text-align: center;
+  padding: 20px 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .choice-overlay h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 22px;
   color: white;
   margin: 0;
-  letter-spacing: 1px;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 @media screen and (max-width: 768px) {
   .gallery-choice-container {
     flex-direction: column;
+    align-items: center;
   }
-  .choice-img-wrapper {
-    height: 300px;
+  .choice-card {
+    width: 100%;
+    max-width: 450px;
   }
 }

@@ -14,7 +14,7 @@ const DoctorsHighlight = () => {
             <div className="dr-text-col">
               <h2 className="dr-name">Meet {doc.name}</h2>
               <h4 className="dr-title">{doc.title}</h4>
-              <p className="dr-desc">{doc.bio}</p>
+              <p className="dr-desc">{doc.shortBio}</p>
               
               {/* 2. Button ko Link mein wrap karein */}
               <Link to={`/doctor/${doc.id}`}>

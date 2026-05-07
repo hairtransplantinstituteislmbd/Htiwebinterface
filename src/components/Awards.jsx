@@ -1,84 +1,53 @@
-// // src/components/Awards.jsx
-// import React from 'react';
-// import './Awards.css';
 
-// // --- IMAGES IMPORT KAREIN (Local Assets se) ---
-// // Note: Make sure karein ke aapne images 'src/assets' folder mein rakh di hain
-// import award1 from '../assets/awards/for ffp.jpeg'; // ABFPRS
-// import award2 from '../assets/awards/doneee.jpeg'; // ABFPRS
-
-
-// const logos = [
-//   { id: 1, src: award1, alt: "ABFPRS Board Certified" },
-//    { id: 2, src: award2, alt: "ABFPRS Board Certified" },
-// ];
-
-// const Awards = () => {
-//   return (
-//     <div className="awards-section">
-//       <div className="awards-track">
-        
-//         {/* --- ORIGINAL SET --- */}
-//         <div className="awards-list">
-//           {logos.map((logo) => (
-//             <img 
-//               key={logo.id} 
-//               src={logo.src} 
-//               alt={logo.alt} 
-//               className="award-logo" 
-//             />
-//           ))}
-//         </div>
-
-//         {/* --- DUPLICATE SET --- */}
-//         <div className="awards-list" aria-hidden="true">
-//           {logos.map((logo) => (
-//             <img 
-//               key={logo.id + '_dup'} 
-//               src={logo.src} 
-//               alt={logo.alt} 
-//               className="award-logo" 
-//             />
-//           ))}
-//         </div>
-
-//       </div>
-//     </div>
-//   );
-// };
 
 // export default Awards;
 
 import React from 'react';
 import './Awards.css';
+import logo1 from '../Images/Awards/Awardlogo1.webp'; 
+import logo2 from '../Images/Awards/Awardlogo2.webp'; 
+import logo3 from '../Images/Awards/Awardlogo3.webp'; 
+import logo4 from '../Images/Awards/Awardlogo4.webp'; 
+import logo5 from '../Images/Awards/Awardlogo5.webp'; 
+import logo6 from '../Images/Awards/Awardlogo6.webp'; 
+import logo7 from '../Images/Awards/Awardlogo7.webp'; 
 
 const logos = [
   {
     id: 1,
-    src: "https://einstein-clients.imgix.net/3094/472740/original_logo-abfvrs-1.png?1738351478=&auto=format&fit=max",
+    src: logo1,
     alt: "ABFVRS Certified"
   },
   {
     id: 2,
-    src: "https://einstein-clients.imgix.net/3094/156901/original_membersonlylogo-gold_without_background.jpg?1473186615=&auto=format&fit=max",
+    src: logo2,
     alt: "Award 2"
   },
   {
     id: 3,
-    src: "https://einstein-clients.imgix.net/3094/472741/original_logo-bestdoctors-3.png?1738351523=&auto=format&fit=max",
+    src: logo3,
     alt: "Award 3"
   },
   {
     id: 4,
-    src: "https://einstein-clients.imgix.net/3094/162221/original.png?1477338570=&auto=format&fit=max",
+    src: logo4,
     alt: "Award 4"
   },
    {
     id: 5,
-    src: "https://einstein-clients.imgix.net/3094/482330/original_castle-connolly-top-doctors.png?1750440478=&auto=format&fit=max",
+    src: logo5,
+    alt: "Award 5"
+  },
+ {
+    id: 6,
+    src: logo6,
+    alt: "Award 5"
+  },
+   {
+    id: 7,
+    src: logo7,
     alt: "Award 5"
   }
-
 ];
 
 const Awards = () => {

@@ -35,7 +35,7 @@ const resultsData = [
   {
     id: 3,
     title: "Hairline Advancement",
-    desc: "This 49-year-old woman underwent a 2,141 graft dense-pack procedure to lower her high hairline and enhance thinning frontotemporal areas.",
+    desc: "This 49-year-old patient underwent a 2,141 graft dense-pack procedure to lower her high hairline and enhance thinning frontotemporal areas.",
      before: MuhammadSaadBefore ,
     after: MuhammadSaadAfter },
   {
@@ -47,13 +47,13 @@ const resultsData = [
    {
     id: 5,
     title: "Hairline Advancement",
-    desc: "This 49-year-old woman underwent a 2,141 graft dense-pack procedure to lower her high hairline and enhance thinning frontotemporal areas.",
+    desc: "This 49-year-old patient underwent a 2,000 graft dense-pack procedure to lower his high hairline and enhance thinning frontotemporal areas.",
     before: RanaNaveedBefore ,
     after: RanaNaveedAfter  },
    {
     id: 6,
     title: "Hairline Advancement",
-    desc: "This 49-year-old woman underwent a 2,141 graft dense-pack procedure to lower her high hairline and enhance thinning frontotemporal areas.",
+    desc: "This 49-year-old patient underwent a 3,141 graft dense-pack procedure to lower his high hairline and enhance thinning frontotemporal areas.",
     before: RashidJanjuaBefore ,
     after: RashidJanjuaAfter  },
 ];
