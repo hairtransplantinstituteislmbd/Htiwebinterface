@@ -52,7 +52,7 @@ const Navbar = () => {
         {/* --- LINKS (Sab par handleLinkClick laga diya) --- */}
         <ul className="nav-links">
             <li>
-                <Link to="/gallery" onClick={handleLinkClick}>GALLERY</Link>
+                <Link to="/gallery">Gallery</Link>
             </li>
             <li>
                 <Link to="/videos" onClick={handleLinkClick}>VIDEO</Link>

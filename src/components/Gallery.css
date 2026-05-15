@@ -1,0 +1,143 @@
+:root {
+  --hti-teal: #26a69a;
+  --hti-gold: #fdbb2d;
+  --bg-soft: #f4fbfb;
+}
+
+.gallery-view {
+  background-color: var(--bg-soft);
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.gallery-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery-intro h1 {
+  color: var(--hti-teal);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.gold-divider.center {
+  width: 50px;
+  height: 4px;
+  background: var(--hti-gold);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* Grid Optimization: Compact Card Sizes */
+.gallery-grid {
+  display: grid;
+  /* Reduced minmax to make cards smaller and fit more in a row */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.gallery-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.card-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  background: var(--hti-teal);
+  color: white;
+  padding: 4px 10px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  /* 4:3 Ratio is more compact than 16:10 */
+  aspect-ratio: 4 / 3; 
+  cursor: col-resize;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.img-wrapper {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Labels */
+.img-label {
+  position: absolute;
+  bottom: 12px;
+  padding: 3px 8px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+.img-label.before { left: 12px;  background: var(--hti-teal); }
+.img-label.after { right: 12px; background: var(--hti-teal); }
+
+/* Slim Professional Slider Bar */
+.slider-bar {
+  position: absolute;
+  top: 0; bottom: 0; width: 2px;
+  background: var(--hti-gold);
+  z-index: 5;
+  transform: translateX(-50%);
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: var(--hti-gold);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card-meta {
+  padding: 12px;
+  text-align: center;
+  background: white;
+}
+
+.card-meta h4 {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Tablet & Mobile responsive adjustments */
+@media (max-width: 600px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-intro h1 { font-size: 1.8rem; }
+}

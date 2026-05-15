@@ -6,8 +6,8 @@ import SecondDoctor from './Images/Dr_Shahrukh.webp';
 import DrZahra from './Images/Dr_Zahra_Aslam-removebg-preview.webp';
 export const doctors = [
   {
-    id: "Humayon-Saeed",
-    name: "Dr. Humayon ",
+    id: "Humayun-Saeed",
+    name: "Dr. Humayun ",
     title: "Founder & Medical Director",
     image: DrHumayonSaeed, // Main Image
     

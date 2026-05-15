@@ -67,7 +67,7 @@ const ExpertCare = () => {
           {/* Testimonial Quote */}
           <div className="testimonial-block">
             <p className="quote-text">
-              “I give the highest marks possible to Dr. Humayon and hir staff. The surgery I received was an FUT hair restoration... My experience at the Islamabad Hair Institute Clinic was A+++, and I would highly recommend this clinic to anyone. Thank you.”
+              “I give the highest marks possible to Dr. Humayun and hir staff. The surgery I received was an FUT hair restoration... My experience at the Islamabad Hair Institute Clinic was A+++, and I would highly recommend this clinic to anyone. Thank you.”
             </p>
             <p className="quote-author">— <strong>A J</strong>, <span className="green-text">5-Star Review</span></p>
           </div>
@@ -79,7 +79,7 @@ const ExpertCare = () => {
           <h2 className="expert-heading">Expert Care with Convenient Payment Options</h2>
           
           <p className="expert-desc">
-            Dr. Humayon and Dr. Shahrukh provide advanced hair restoration care to patients from around the world. Their expertise includes <span className="green-text underline">follicular unit extraction (FUE)</span>, a precise technique that transplants small groups of follicles.
+            Dr. Humayun and Dr. Shahrukh provide advanced hair restoration care to patients from around the world. Their expertise includes <span className="green-text underline">follicular unit extraction (FUE)</span>, a precise technique that transplants small groups of follicles.
           </p>
 
           <p className="expert-desc">

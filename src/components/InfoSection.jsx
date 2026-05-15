@@ -69,10 +69,10 @@ const InfoSection = () => {
 
           <div className="info-text-wrapper">
             <p className="info-text">
-              This 42-year-old man named AyazLaghari achieved a dense, youthful transformation with 2,850 grafts performed by Dr. Humayon By focusing on high-density placement along the frontal hairline and temple peaks, we’ve restored a look that is indistinguishable from natural growth.
+              This 42-year-old man named AyazLaghari achieved a dense, youthful transformation with 2,850 grafts performed by Dr. Humayun By focusing on high-density placement along the frontal hairline and temple peaks, we’ve restored a look that is indistinguishable from natural growth.
             </p>
             <p className="info-text">
-             Dr. Humayon personally perform the most advanced procedures to give you the hairline and confidence you deserve.
+             Dr. Humayun personally perform the most advanced procedures to give you the hairline and confidence you deserve.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ const InfoSection = () => {
               Hair Tranplant Institute Islamabad makes it incredibly easy to explore your options from home with a virtual consultation. No travel. No stress.
             </p>
             <p className="info-text">
-              Our process starts with simple photos and a quick form about your hair loss history, goals, and concerns. Dr. Humayon personally review your information to create a custom plan.
+              Our process starts with simple photos and a quick form about your hair loss history, goals, and concerns. Dr. Humayun personally review your information to create a custom plan.
             </p>
           </div>
         </div>
@@ -126,11 +126,11 @@ const InfoSection = () => {
           </div>
           <div className="dark-card">
             <h3>Expertise</h3>
-            <p><a href="#">Dr. Humayon</a> combines world-class surgical training with decades of hair restoration expertise.</p>
+            <p><a href="#">Dr. Humayun</a> combines world-class surgical training with decades of hair restoration expertise.</p>
           </div>
           <div className="dark-card">
             <h3>Results</h3>
-            <p>Dr. Humayon and <a href="#">Dr. Shahrukh</a> approach hair restoration as an art form. <br/><br/><a href="#">See their natural-looking results in our gallery.</a></p>
+            <p>Dr. Humayun and <a href="#">Dr. Shahrukh</a> approach hair restoration as an art form. <br/><br/><a href="#">See their natural-looking results in our gallery.</a></p>
           </div>
         </div>
       </div>

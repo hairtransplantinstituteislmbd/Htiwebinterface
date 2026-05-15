@@ -14,14 +14,14 @@ const Footer = () => {
         <div className="social-icons">
           
           {/* Google Icon */}
-          <a href="https://google.com" target="_blank" rel="noreferrer" className="icon-circle">
+          <a href="https://www.google.com/search?q=Hair+Transplant+Institute&stick=H4sIAAAAAAAA_-NgU1I1qDC2SElLSjM2NDQzTbRIMTG1MqiwMEo2tzQwMTS0TEkzN0lOW8Qq6ZGYWaQQUpSYV1yQk5hXouCZV1ySWVJakgoAovEb7UUAAAA&hl=en&mat=CRD-i3Cv7_glElcBTVDHnjfd-FagZPRBTV7rKC2ZawSqYiYiWgClqzevK0Flj28ZkI_RvZGBjtC52Ha7aVdtEEy_awCwfoBd2NIBGvu6U7aNR2H6qQ4NXQs1aHxTuXXl_UQ&authuser=0" target="_blank" rel="noreferrer" className="icon-circle">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .533 5.347.533 12S5.867 24 12.48 24c3.44 0 6.013-1.133 8.053-3.24 2.08-2.16 2.72-5.2 2.72-7.613 0-.747-.08-1.48-.213-2.227h-10.56z"/>
             </svg>
           </a>
 
           {/* Facebook Icon */}
-          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-circle">
+          <a href="https://www.facebook.com/share/1DW293eYgJ/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="icon-circle">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
             </svg>
@@ -40,17 +40,17 @@ const Footer = () => {
       {/* --- BOTTOM SECTION: LEGAL --- */}
       <div className="footer-bottom">
         <p className="disclaimer">
-          *Disclaimer: results are not guaranteed, may not be permanent, and can vary per individual. Some images are of models, not actual patients.
+          *Disclaimer: results are not guaranteed, may not be permanent, and can vary per individual. 
         </p>
 
         <p className="copyright">
-          ©2013 - 2026 Chicago Hair Institute | Forever Website® 2.0 | Designed & Developed by <a href="#" className="footer-link">Einstein Medical</a>
+          ©2013 - 2026 Hair transplant Institute | Forever Website® 2.0 | Designed & Developed by <a href="#" className="footer-link">HTI Developers</a>
         </p>
 
         <div className="footer-nav">
-          <Link to="/sitemap" className="footer-link">Sitemap</Link> | 
-          <Link to="/privacy" className="footer-link"> Privacy Policy</Link> | 
-          <Link to="/login" className="footer-link"> Login</Link>
+          
+          <Link to="/privacy-policy" className="footer-link"> Privacy Policy</Link> | 
+        
         </div>
       </div>
 

@@ -7,7 +7,7 @@ import './Awards.css';
 import logo1 from '../Images/Awards/Awardlogo1.webp'; 
 import logo2 from '../Images/Awards/Awardlogo2.webp'; 
 import logo3 from '../Images/Awards/Awardlogo3.webp'; 
-import logo4 from '../Images/Awards/Awardlogo4.webp'; 
+import logo4 from '../Images/Awards/OIPnew.webp'; 
 import logo5 from '../Images/Awards/Awardlogo5.webp'; 
 import logo6 from '../Images/Awards/Awardlogo6.webp'; 
 import logo7 from '../Images/Awards/Awardlogo7.webp'; 
