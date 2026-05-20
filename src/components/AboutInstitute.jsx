@@ -18,7 +18,7 @@ const AboutInstitute = () => {
           <h2 className="ai-heading">Hair Transplant Institute</h2>
           
           <p className="ai-desc">
-            Dr. Humayun and the team at the Islamabad Hair Institute offer world-class treatment backed by over 30 years of expertise in the field of <Link to="/services" className="ai-link">hair restoration</Link>. Our doctors are nationally affiliated with professional associations including:
+            Dr. Humayun and the team at the Hair Transplant Institute offer world-class treatment backed by over 30 years of expertise in the field of <Link to="/services" className="ai-link">hair restoration</Link>. Our doctors are nationally affiliated with professional associations including:
           </p>
 
           <ul className="ai-list">

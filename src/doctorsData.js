@@ -2,7 +2,7 @@
 
 
 import DrHumayonSaeed from './Images/DrHumayonSaeed.webp'; 
-import SecondDoctor from './Images/Dr_Shahrukh.webp'; 
+import SecondDoctor from './Images/newDr_Shahrukh.webp'; 
 import DrZahra from './Images/Dr_Zahra_Aslam-removebg-preview.webp';
 export const doctors = [
   {

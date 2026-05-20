@@ -49,6 +49,32 @@ h2::after {
   margin-top: 10px;
 }
 
+/* --- Split Layout for Expertise Section --- */
+.split-layout {
+  display: flex;
+  align-items: center; /* Dono ko vertically center karega */
+  gap: 40px; /* Text aur image ke darmiyan fasla */
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1; /* 50% space text lega */
+}
+
+.image-content {
+  flex: 1; /* 50% space image legi */
+  display: flex;
+  justify-content: flex-end; /* Image ko right side par push karega */
+}
+
+.side-img {
+  width: 100%;
+  max-width: 450px; /* Image ko zyada over-size hone se rokega */
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
 .surgeon-section {
   background: #fff;
   display: flex;
@@ -133,7 +159,27 @@ h2::after {
   padding: 20px;
 }
 
-@media (max-width: 768px) {
-  .about-header h1 { font-size: 2.5rem; }
-  .dept-grid { grid-template-columns: 1fr; }
+/* --- Mobile Responsiveness --- */
+@media (max-width: 800px) {
+  .split-layout {
+    flex-direction: column;
+    text-align: center; /* Mobile par text center acha lagta hai */
+  }
+  
+  .image-content {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .side-img {
+    max-width: 100%;
+  }
+
+  .about-header h1 { 
+    font-size: 2.5rem; 
+  }
+  
+  .dept-grid { 
+    grid-template-columns: 1fr; 
+  }
 }

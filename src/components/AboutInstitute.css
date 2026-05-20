@@ -29,7 +29,7 @@
   
   /* Image ko stretch hone se bachaye */
   object-fit: cover; 
-  object-position: top center; 
+  object-position: bottom center; 
   
   border-radius: 4px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);

@@ -9,10 +9,13 @@ import { Link } from 'react-router-dom';
 import { servicesData } from '../servicesData';
 // 1. DOCTORS DATA IMPORT KIYA (Dhayn rahe: export ka naam 'doctors' hai)
 import { doctors } from '../doctorsData'; 
+import Menutop1 from '../Images/Menutop1.webp'; 
+import Menutop2 from '../Images/Menutop2.webp';
+import Menutop3 from '../Images/Menutop3.webp';
 
-const img1 = "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=600";
-const img2 = "https://images.unsplash.com/photo-1628348070889-cb656235b4eb?auto=format&fit=crop&q=80&w=600";
-const img3 = "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&q=80&w=600";
+const img1 = Menutop1;
+const img2 = Menutop2;
+const img3 = Menutop3;
 
 const MenuOverlay = ({ isOpen, onClose }) => {
   const [showServicesOnly, setShowServicesOnly] = useState(false);
@@ -41,7 +44,7 @@ const MenuOverlay = ({ isOpen, onClose }) => {
                 
                 {/* Static Links */}
                 <li><Link to="/" onClick={onClose}>Home</Link></li>
-                <li><Link to="/" onClick={onClose}>About our Doctors</Link></li>
+               
                 
                 {/* --- 2. DYNAMIC DOCTORS LIST --- */}
                 {/* Ye loop doctorsData file se naam utha ke list banayega */}
@@ -54,7 +57,7 @@ const MenuOverlay = ({ isOpen, onClose }) => {
                 ))}
 
                 {/* Static Link */}
-                <li><Link to="/" onClick={onClose}>Oakbrook Terrace Location</Link></li>
+                <li><Link to="/location" onClick={onClose}>HTI Office Location</Link></li>
               </ul>
             </div>
           )}
