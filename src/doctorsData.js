@@ -4,6 +4,10 @@
 import DrHumayonSaeed from './Images/DrHumayonSaeed.webp'; 
 import SecondDoctor from './Images/newDr_Shahrukh.webp'; 
 import DrZahra from './Images/Dr_Zahra_Aslam-removebg-preview.webp';
+import ChWajahatBefore from './Images/Ch Wajahat FUE After.webp'; 
+import ChWajahatAfter from './Images/Ch Wajahat FUE Before.webp';
+import MasabAnwarAfter from './Images/Masab Anwar FUE After.webp'; 
+import MasabAnwarBefore from './Images/Masab Anwar FUE Before.webp'; 
 export const doctors = [
   {
     id: "Humayun-Saeed",
@@ -16,8 +20,8 @@ export const doctors = [
     education: "Dr. Humayun Mohmand is a member of the Royal College of Surgeons of Edinburgh and holds multiple international certifications in plastic, cosmetic, and hair restoration surgery. His extensive training and global affiliations reflect his commitment to maintaining the highest standards of medical excellence and staying at the forefront of modern techniques.",
     
     // --- UPDATED WORKING IMAGES ---
-    beforeImage: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=600&auto=format&fit=crop&q=60", // Man before
-    afterImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&auto=format&fit=crop&q=60", // Man after (Happy)
+    beforeImage: ChWajahatAfter, // Man before
+    afterImage: ChWajahatBefore, // Man after (Happy)
     caseStudy: "This patient suffered from a receding hairline (Norwood Class 3). Dr. Konior performed a high-density FUE session with 2,500 grafts to reconstruct the frontal hairline, resulting in a youthful and natural frame for the face."
   },
   // {
@@ -46,8 +50,8 @@ export const doctors = [
     education: "Dr. Shahrukh holds an MBBS degree and has further specialized by completing an MBA in Hair Transplant Management, combining medical knowledge with professional expertise in healthcare administration.",
     
     // --- UPDATED WORKING IMAGES ---
-    beforeImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=60", 
-    afterImage: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=600&auto=format&fit=crop&q=60",
+    beforeImage: MasabAnwarBefore, 
+    afterImage: MasabAnwarAfter,
     caseStudy: "A challenging case of advanced baldness. Dr. Ali performed a mega-session of 4,000 grafts over two days. The result shows complete coverage of the scalp with natural density."
   }
 ];
