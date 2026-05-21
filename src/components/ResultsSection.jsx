@@ -9,8 +9,8 @@ import MasabAnwarAfter from '../Images/Masab Anwar FUE After.webp';
 import MasabAnwarBefore from '../Images/Masab Anwar FUE Before.webp'; 
 import MuhammadSaadAfter from '../Images/Muhammad Saad After.webp'; 
 import MuhammadSaadBefore from '../Images/Muhammad Saad Before.webp'; 
-import NaveedMalikAfter from '../Images/Naveed Malik After.webp'; 
-import NaveedMalikBefore from '../Images/Naveed Malik Before.webp'; 
+import newpat6aft from '../Images/newpat6aft.webp'; 
+import newpat6bef  from '../Images/newpat6bef.webp';
 import RanaNaveedAfter from '../Images/Rana Naveed After.webp'; 
 import RanaNaveedBefore from '../Images/Rana Naveed Before.webp'; 
 import RashidJanjuaAfter from '../Images/Rashid Janjua FUE After.webp'; 
@@ -23,8 +23,8 @@ const resultsData = [
     id: 1,
     title: "Full Scalp Restoration",
     desc: "This 34-year-old man underwent a 3,665-graft hair restoration, designed to rebuild the frontal hairline and extend coverage.",
-     before: ChWajahatBefore ,
-    after: ChWajahatAfter },
+     before: ChWajahatAfter ,
+    after: ChWajahatBefore },
   {
     id: 2,
     title: "Front Temporal Restoration",
@@ -42,8 +42,8 @@ const resultsData = [
     id: 4,
     title: "Frontal Midscalp Restoration",
     desc: "This patient underwent a two-session hair restoration totaling 4,563 grafts to create a natural hairline and boost density.",
-     before: NaveedMalikBefore ,
-    after: NaveedMalikAfter },
+     before: newpat6bef ,
+    after: newpat6aft },
    {
     id: 5,
     title: "Hairline Advancement",

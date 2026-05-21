@@ -4,7 +4,7 @@ import './InfoSection.css';
 import { Link } from 'react-router-dom';
 import AyazLaghariAfter from '../Images/Ayaz Laghari FUTFUE After.webp'; 
 import AyazLaghariBefore from '../Images/Ayaz Laghari FUTFUE Before.webp'; 
-import DrHumayonSurical from '../Images/Dr_Humayun_PIc.webp'; 
+import DrHumayonSurical from '../Images/Menutop1.webp'; 
 
 // --- PLACEHOLDER IMAGES ---
 const beforeImg = "https://einstein-clients.imgix.net/3094/482333/original_before-hair-loss-surgery-4210-graft-hair-restoration.jpg?1750441507=&auto=format&fit=max&auto=format&w=1102&h=840"; 
