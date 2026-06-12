@@ -11,7 +11,7 @@ import logo4 from '../Images/Awards/OIPnew.webp';
 import logo5 from '../Images/Awards/Awardlogo5.webp'; 
 import logo6 from '../Images/Awards/Awardlogo6.webp'; 
 import logo7 from '../Images/Awards/Awardlogo7.webp'; 
-
+import logo8 from '../Images/Awards/OIP.webp';
 const logos = [
   {
     id: 1,
@@ -41,12 +41,17 @@ const logos = [
  {
     id: 6,
     src: logo6,
-    alt: "Award 5"
+    alt: "Award 6"
   },
    {
     id: 7,
     src: logo7,
-    alt: "Award 5"
+    alt: "Award 7"
+  },
+  {
+    id: 8,
+    src: logo8,
+    alt: "Award 8"
   }
 ];
 

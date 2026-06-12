@@ -1,0 +1,96 @@
+/* --- MAIN PAGE STYLING --- */
+.patient-details-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* --- HEADER & TEXT STYLING --- */
+.pd-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #007bff; /* Button color */
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.pd-main-heading {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pd-sub-heading {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- GALLERY GRID STYLING (4 IN A ROW) --- */
+.pd-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 1 line mein 4 tasweerein */
+  gap: 20px; /* Cards ke darmiyan fasla */
+  width: 100%;
+}
+
+.pd-image-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.pd-image-card:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+.pd-img {
+  width: 100%;
+  height: 250px; /* Perfect height cards ke liye */
+  object-fit: cover; 
+  object-position: top center; /* Hairline show karne ke liye bohat zaroori hai */
+  display: block;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Tablets aur chhote laptops ke liye (1 line mein 2 images) */
+@media (max-width: 992px) {
+  .pd-gallery-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* Mobile phones ke liye (1 line mein 1 image) */
+@media (max-width: 576px) {
+  .pd-gallery-grid {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+  
+  .pd-main-heading {
+    font-size: 1.8rem;
+  }
+  
+  .pd-img {
+    height: 300px; /* Mobile par thori bari dikhane ke liye */
+  }
+}

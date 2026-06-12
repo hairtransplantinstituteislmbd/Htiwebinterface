@@ -1,8 +1,9 @@
-// export default ResultsSection;
+
 
 
 import React, { useState, useRef } from 'react';
 import './ResultsSection.css';
+import { Link } from 'react-router-dom';
 import ChWajahatBefore from '../Images/Ch Wajahat FUE After.webp'; 
 import ChWajahatAfter from '../Images/Ch Wajahat FUE Before.webp'; 
 import MasabAnwarAfter from '../Images/Masab Anwar FUE After.webp'; 
@@ -11,51 +12,57 @@ import MuhammadSaadAfter from '../Images/Muhammad Saad After.webp';
 import MuhammadSaadBefore from '../Images/Muhammad Saad Before.webp'; 
 import newpat6aft from '../Images/newpat6aft.webp'; 
 import newpat6bef  from '../Images/newpat6bef.webp';
-import RanaNaveedAfter from '../Images/Rana Naveed After.webp'; 
-import RanaNaveedBefore from '../Images/Rana Naveed Before.webp'; 
+import img1 from '../Images/Cricketerdata/1.webp'; 
+import img2 from '../Images/Cricketerdata/2.webp';
 import RashidJanjuaAfter from '../Images/Rashid Janjua FUE After.webp'; 
 import RashidJanjuaBefore from '../Images/Rashid Janjua FUE Before.webp'; 
-
-
 
 const resultsData = [
   {
     id: 1,
     title: "Full Scalp Restoration",
     desc: "This 34-year-old man underwent a 3,665-graft hair restoration, designed to rebuild the frontal hairline and extend coverage.",
-     before: ChWajahatAfter ,
-    after: ChWajahatBefore },
+    before: img1,
+    after: img2 ,
+    // Yahan humne pehle card ke liye naye page ka link add kar diya hai.
+    // Aap "/patient-details" ko apne actual route/page ke URL se replace kar lein jahan 10 images hain.
+    detailLink: "/patient-details" 
+  },
   {
     id: 2,
     title: "Front Temporal Restoration",
     desc: "This 28-year-old patient received 4,086 grafts over three sessions to restore thinning hair in the frontal and crown areas.",
-    before: MasabAnwarBefore ,
+    before: MasabAnwarBefore,
     after: MasabAnwarAfter
   },
   {
     id: 3,
     title: "Hairline Advancement",
     desc: "This 49-year-old patient underwent a 2,141 graft dense-pack procedure to lower her high hairline and enhance thinning frontotemporal areas.",
-     before: MuhammadSaadBefore ,
-    after: MuhammadSaadAfter },
+    before: MuhammadSaadBefore,
+    after: MuhammadSaadAfter 
+  },
   {
     id: 4,
     title: "Frontal Midscalp Restoration",
     desc: "This patient underwent a two-session hair restoration totaling 4,563 grafts to create a natural hairline and boost density.",
-     before: newpat6bef ,
-    after: newpat6aft },
+    before: newpat6bef,
+    after: newpat6aft 
+  },
    {
     id: 5,
     title: "Hairline Advancement",
     desc: "This 49-year-old patient underwent a 2,000 graft dense-pack procedure to lower his high hairline and enhance thinning frontotemporal areas.",
-    before: RanaNaveedBefore ,
-    after: RanaNaveedAfter  },
+  before: ChWajahatAfter,
+    after: ChWajahatBefore,
+  },
    {
     id: 6,
     title: "Hairline Advancement",
     desc: "This 49-year-old patient underwent a 3,141 graft dense-pack procedure to lower his high hairline and enhance thinning frontotemporal areas.",
-    before: RashidJanjuaBefore ,
-    after: RashidJanjuaAfter  },
+    before: RashidJanjuaBefore,
+    after: RashidJanjuaAfter  
+  },
 ];
 
 // --- SUB-COMPONENT FOR INDIVIDUAL SLIDERS ---
@@ -98,6 +105,30 @@ const ResultSlider = ({ before, after }) => {
   );
 };
 
+// --- SUB-COMPONENT FOR INDIVIDUAL CARDS ---
+const ResultCard = ({ item }) => {
+  return (
+    <div className="result-card">
+      <ResultSlider before={item.before} after={item.after} />
+
+      <div className="res-text-content">
+        {/* Title aur Link ko aamne-saamne laane ke liye wrapper */}
+        <div className="res-title-container">
+          <h3 className="res-title">{item.title}</h3>
+          
+          {/* Agar array item mein 'detailLink' maujud hai (jaise item 1 mein), toh yeh link show hoga */}
+          {item.detailLink && (
+             <Link to={item.detailLink} className="see-more-link">
+              See More →
+            </Link>
+          )}
+        </div>
+        
+        <p className="res-desc">{item.desc}</p>
+      </div>
+    </div>
+  );
+};
 
 // --- MAIN COMPONENT ---
 const ResultsSection = () => {
@@ -107,18 +138,7 @@ const ResultsSection = () => {
       
       <div className="results-grid">
         {resultsData.map((item) => (
-          <div key={item.id} className="result-card">
-            
-            {/* Using the new Slider Component here */}
-            <ResultSlider before={item.before} after={item.after} />
-
-            {/* Text Content */}
-            <div className="res-text-content">
-              <h3 className="res-title">{item.title}</h3>
-              <p className="res-desc">{item.desc}</p>
-            </div>
-            
-          </div>
+          <ResultCard key={item.id} item={item} />
         ))}
       </div>
     </div>

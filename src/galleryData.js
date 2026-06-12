@@ -1,4 +1,6 @@
 // src/galleryData.js
+import img1 from './Images/Cricketerdata/3.webp'; 
+import img2 from './Images/Cricketerdata/2.webp'; 
 import ChWajahatBefore from './Images/Ch Wajahat FUE After.webp'; 
 import ChWajahatAfter from './Images/Ch Wajahat FUE Before.webp'; 
 import MasabAnwarAfter from './Images/Masab Anwar FUE After.webp'; 
@@ -36,8 +38,10 @@ export const galleryData = {
     title: "Hair Loss Surgery Gallery",
     description: "Explore our successful hair restoration cases for men.",
     images: [
-      { id: 1,  before: ChWajahatAfter ,
-          after: ChWajahatBefore },
+
+
+      { id: 1,  before: img1 ,
+          after: img2 },
       { id: 2,  before: MasabAnwarBefore ,
           after: MasabAnwarAfter },
       { id: 3,  before: MuhammadSaadBefore ,
@@ -56,8 +60,8 @@ export const galleryData = {
     title: "Hairline Lowering Gallery",
     description: "See the transformation results for hairline advancement procedures.",
     images: [
-      { id: 1,  before: RanaNaveedBefore ,
-          after: RanaNaveedAfter },
+       { id: 1,  before: ChWajahatAfter ,
+          after: ChWajahatBefore },
       { id: 2, before: RashidJanjuaBefore ,
           after: RashidJanjuaAfter },
       { id: 3, before: SufianNaeemBefore ,

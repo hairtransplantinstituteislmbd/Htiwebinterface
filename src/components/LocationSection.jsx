@@ -13,16 +13,19 @@ const LocationSection = () => {
           <h2 className="loc-city">Hair Transplant Institute</h2>
           
           <div className="loc-address">
+            <p>Phone No: 051-8441444</p>
             <p>Cell No: 0321-5000242</p>
-            <p>Whatsapp: +92(321)5000242</p>
-           <p>Email: hairtransplantinstituteislmbd@gmail.com</p>
+            <p>WhatsApp: +92-300-9558737</p>
+             <p>WhatsApp: 0321-5000242</p>
+            <p>Email Address: info@hti.com.pk</p>
           </div>
-          <h2 className="loc-city">PESHAWAR / UAE / DUBAI</h2>
+          <h2 className="loc-city">PESHAWAR </h2>
           
           <div className="loc-address">
+            <p>Phone No: 051-8441444</p>
             <p>Cell No: +92-321-5321974</p>
             <p>Whatsapp: +92-321-5321974</p>
-           <p>Email: htipeshawar@gmail.com</p>
+            <p>Email: htipeshawar@gmail.com</p>
           </div>
 
           <p className="loc-hours">Open Monday To Friday 7:30 AM - 5:00 PM</p>

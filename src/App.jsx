@@ -15,6 +15,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import WhatsAppWidget from './components/WhatsAppWidget';
 import AboutUs from './components/AboutUs';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import PatientDetails from './components/PatientDetails';
 import './App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} /> 
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/patient-details" element={<PatientDetails />} />
       </Routes>
        {location.pathname !== '/contact' && (
         <ContactForm /> 

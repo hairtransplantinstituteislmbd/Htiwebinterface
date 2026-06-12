@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'; // 1. Link ko import kiya
 import { galleryData } from '../galleryData';
 import './Gallery.css';
 
-const ComparisonSlider = ({ item }) => {
+// 2. detailLink ko as a prop receive kiya
+const ComparisonSlider = ({ item, detailLink }) => {
   const [sliderPos, setSliderPos] = useState(50);
   const containerRef = useRef(null);
 
@@ -49,8 +51,16 @@ const ComparisonSlider = ({ item }) => {
         </div>
       </div>
       
+      {/* 3. Card Meta ko update kiya taake Title aur Link dono show hon */}
       <div className="card-meta">
         <h4>H.T.I Clinical Result</h4>
+        
+        {/* Agar detailLink pass hua hai toh "See More" show hoga */}
+        {detailLink && (
+          <Link to={detailLink} className="see-more-link">
+            See More →
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -71,9 +81,19 @@ const Gallery = () => {
         <div className="gold-divider center"></div>
       </header>
       <div className="gallery-grid">
-        {allImages.map((item, idx) => (
-          <ComparisonSlider key={idx} item={item} />
-        ))}
+        {allImages.map((item, idx) => {
+          // 4. Sirf pehli image (idx === 0) par link add kar rahe hain. 
+          // (Aap apne route ke mutabiq link change kar lein)
+          const link = idx === 0 ? "/patient-details" : null;
+          
+          return (
+            <ComparisonSlider 
+              key={idx} 
+              item={item} 
+              detailLink={link} 
+            />
+          );
+        })}
       </div>
     </div>
   );

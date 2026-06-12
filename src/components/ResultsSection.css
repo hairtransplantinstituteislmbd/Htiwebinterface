@@ -144,6 +144,77 @@
   color: #666;
 }
 
+/* Button styling */
+.extra-images-section {
+  padding: 0 15px 15px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.see-more-btn {
+  background-color: #000; /* Replace with your theme color */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #333;
+}
+
+/* Extra images grid layout */
+.extra-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 images side by side */
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.extra-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Title container jisme title aur "See More" ka link dono hain */
+.res-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px; /* Description se pehle thori spacing */
+}
+
+/* Title text ki styling */
+.res-title {
+  margin: 0;
+  font-size: 1.1rem;
+  flex: 1; /* Space barabar divide karne ke liye */
+  padding-right: 10px;
+}
+
+/* "See More" link ki styling */
+.see-more-link {
+  font-size: 0.9rem;
+  color: #007bff; /* Apna brand color use kar saktay hain */
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap; /* Text ko 2 lines mein break hone se roknay ke liye */
+  transition: color 0.3s ease;
+}
+
+.see-more-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
 /* --- MOBILE RESPONSIVE --- */
 @media screen and (max-width: 768px) {
   .results-grid {
