@@ -27,10 +27,10 @@ const Hero = () => {
                   <span>Transplants by <br/> Surgeons - Not Techs</span>
               </div>
               <div className="feature border-left">
-                  <span>30+ Years <br/> in Practice</span>
+                  <span>25+ Years <br/>Of Experience</span>
               </div>
               <div className="feature border-left">
-                  <span>Board- <br/> Certified</span>
+                  <span>Board-Certified  <br/> Plastic Surgeons</span>
               </div>
           </div>
 
