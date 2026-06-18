@@ -44,7 +44,7 @@ const Footer = () => {
         </p>
 
         <p className="copyright">
-          ©2013 - 2026 Hair transplant Institute | Forever Website® 2.0 | Designed & Developed by <a href="#" className="footer-link">HTI Developers</a>
+          ©2001 - 2026 Hair transplant Institute | Forever Website® 1.0 | Designed & Developed by <a href="#" className="footer-link">Jahan</a>
         </p>
 
         <div className="footer-nav">

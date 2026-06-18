@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { servicesData } from '../servicesData';
 // 1. DOCTORS DATA IMPORT KIYA (Dhayn rahe: export ka naam 'doctors' hai)
 import { doctors } from '../doctorsData'; 
-import Menutop1 from '../Images/Menutop1.webp'; 
+import Menutop1 from '../Images/Consultation.webp'; 
 import Menutop2 from '../Images/Menutop2.webp';
 import Menutop3 from '../Images/Menutop3.webp';
 
