@@ -80,7 +80,12 @@ const InfoSection = () => {
 
         {/* --- RIGHT SIDE: VIRTUAL CONSULTATION --- */}
         <div className="info-half right-half">
-          <h2 className="serif-heading">Request Your <br/> Virtual Consultation</h2> 
+          <div className="heading-row">
+    <h2 className="serif-heading">Request Your <br/> Virtual/Physical Consultation</h2> 
+    <Link to="/contact" className="btn-inline-link">
+      Book Now
+    </Link>
+  </div>
           
           <div className="consult-img-wrapper">
              <img src={laptopMan} alt="Virtual Consultation" />

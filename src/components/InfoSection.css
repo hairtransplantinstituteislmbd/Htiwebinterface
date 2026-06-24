@@ -17,7 +17,7 @@
 
 .info-half {
   flex: 1; 
-  padding: 30px 5%;
+  padding: 20px 5%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -29,8 +29,8 @@
 
 .serif-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 60px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 300;
   margin-bottom: 30px;
   line-height: 1.2;
   color: #222;
@@ -165,6 +165,36 @@
   object-position: top center;
 }
 
+
+.heading-row {
+  display: flex;
+  justify-content: space-between; /* Ya 'flex-start' agar aap button ko bilkul heading ke sath chahte hain */
+  align-items: center; /* Vertically center karega */
+  gap: 20px; /* Heading aur button ke darmian space */
+  margin-bottom: 20px; /* Image se pehle space */
+}
+
+/* Heading ki default margin ko hataanay ke liye taake alignment kharab na ho */
+.heading-row .serif-heading {
+  margin: 0;
+}
+
+/* Link/Button ka style */
+.btn-inline-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d4af37; /* Gold/brand color - aap change kar sakte hain */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Button ke text ko 2 lines mein totne se bachayega */
+}
+
+.btn-inline-link:hover {
+  background-color: #b3912d; /* Hover effect */
+}
 .info-text-wrapper {
   display: flex;
   flex-direction: column;
