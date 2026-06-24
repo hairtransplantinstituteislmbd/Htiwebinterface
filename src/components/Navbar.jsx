@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import MenuOverlay from './MenuOverlay'; 
-import logo from "../assets/aiease_1767715345739.png";
+import logo from '../Images/newnavbarlogo.webp';
 import { Link } from 'react-router-dom'; 
 
 const Navbar = () => {
@@ -35,18 +35,7 @@ const Navbar = () => {
       
         <Link to="/" className="logo-container" onClick={handleLinkClick}>
             <img src={logo} alt="Logo" className="nav-logo-img" />
-            <div className="logo-text-wrapper">
-              
-                <div className="logo-main">
-                    <span className="logo-bold">DR.</span>
-                    <span className="logo-bold">HUMAYUN'S</span>
-                </div>
-                <div className="logo-bottom">
-                    {/* <span className="line-left"></span> */}
-                    <span className="logo-sub">HAIR TRANSPLANT INSTITUTE</span>
-                    {/* <span className="line-right"></span> */}
-                </div>
-            </div>
+            
         </Link>
         
         {/* --- LINKS (Sab par handleLinkClick laga diya) --- */}

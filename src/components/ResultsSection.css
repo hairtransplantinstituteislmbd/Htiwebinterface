@@ -215,6 +215,17 @@
   color: #0056b3;
   text-decoration: underline;
 }
+
+.results-header {
+  display: flex;
+  justify-content: center; /* Keeps items together on the left */
+  align-items: center; /* Vertically centers the button with the text */
+  gap: 20px; /* Adds space between the text and the button */
+  margin-bottom: 30px;
+}
+
+/* Ensure your heading doesn't have extra bottom margin that throws off alignment */
+
 /* --- MOBILE RESPONSIVE --- */
 @media screen and (max-width: 768px) {
   .results-grid {

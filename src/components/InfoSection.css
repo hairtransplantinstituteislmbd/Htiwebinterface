@@ -185,7 +185,7 @@
 .why-choose-section { background-color: #f7f7f7; padding: 60px 5%; }
 .centered-heading { text-align: center; font-family: 'Playfair Display', serif; font-size: 48px; margin-bottom: 50px; color: #333; }
 .cards-grid { display: flex; gap: 30px; max-width: 1200px; margin: 0 auto; }
-.dark-card { flex: 1; background-color: #444; padding: 50px 30px; text-align: center; color: white; }
+.dark-card { flex: 1; background-color: #444; padding: 50px 30px; text-align: center; color: rgb(251, 127, 127); }
 .dark-card h3 { font-family: 'Playfair Display', serif; font-size: 30px; margin-bottom: 20px; }
 .dark-card p { font-size: 16px; line-height: 1.6; color: #ddd; }
 .dark-card a { color: #4db6ac; text-decoration: none; border-bottom: 1px solid #4db6ac; }

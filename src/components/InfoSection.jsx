@@ -80,7 +80,7 @@ const InfoSection = () => {
 
         {/* --- RIGHT SIDE: VIRTUAL CONSULTATION --- */}
         <div className="info-half right-half">
-          <h2 className="serif-heading">Request Your <br/> Virtual Consultation</h2>
+          <h2 className="serif-heading">Request Your <br/> Virtual Consultation</h2> 
           
           <div className="consult-img-wrapper">
              <img src={laptopMan} alt="Virtual Consultation" />
@@ -103,10 +103,10 @@ const InfoSection = () => {
       <div className="testimonial-section">
         <div className="testimonial-container">
           <p className="quote-text">
-            “I just got an FUE hair transplant with them and I am very happy with how the procedure went. If you are considering a transplant, I would recommend Chicago Hair Institute.”
+            “I just got an FUE hair transplant with them and I am very happy with how the procedure went. If you are considering a transplant, I would recommend Hair Transplant Institute .”
           </p>
           <p className="author-text">
-            – BMO, <a href="#" className="teal-link">5-Star Review</a>
+            – BMO,  5-Star Review
           </p>
           <div className="action-buttons">
            <Link to="/contact" className="btn-teal btn-call" onClick={() => window.scrollTo(0, 0)}>
@@ -122,15 +122,15 @@ const InfoSection = () => {
         <div className="cards-grid">
           <div className="dark-card">
             <h3>Care by a Surgeon</h3>
-            <p>Procedures like <a href="#">follicular unit extraction (FUE)</a> are often handed off to technicians. At CHI, our surgeons personally perform every stage.</p>
+            <p>Procedures like follicular unit extraction (FUE) and Follicular Unit Transplantation(FUT) are often handed off to technicians. At HTI, our surgeons personally perform every stage.</p>
           </div>
           <div className="dark-card">
             <h3>Expertise</h3>
-            <p><a href="#">Dr. Humayun</a> combines world-class surgical training with decades of hair restoration expertise.</p>
+            <p>Dr. Humayun combines world-class surgical training with decades of hair restoration expertise.</p>
           </div>
           <div className="dark-card">
             <h3>Results</h3>
-            <p>Dr. Humayun and <a href="#">Dr. Shahrukh</a> approach hair restoration as an art form. <br/><br/><a href="#">See their natural-looking results in our gallery.</a></p>
+            <p>Dr. Humayun and Dr. Shahrukh approach hair restoration as an art form. <br/><br/><a href="/gallery">See their natural-looking results in our gallery.</a></p>
           </div>
         </div>
       </div>

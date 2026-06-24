@@ -19,7 +19,7 @@ const Hero = () => {
           
         {/* Left Side: Content */}
         <div className="hero-text">
-          <h4>HAIR TRANSPLANT ISLAMABAD</h4>
+          <h4>HAIR TRANSPLANT INSTITUTE ISLAMABAD</h4>
           <h1>A World Leader in<br /> Hair Restoration</h1>
           
           <div className="features-row">

@@ -9,9 +9,9 @@ const VideoPage = () => {
   }, []);
 
   const [mainVideo, setMainVideo] = useState({
-    url: "https://www.youtube.com/embed/J9vx2Z7-7u4",
-    title: "Dr. Ross Carrier",
-    desc: "Facial plastic surgeon Sahar Nadimi tells us how and why she came to Chicago Hair Institute. She has a special interest in helping women affected by hair loss."
+    url: "https://www.youtube.com/embed/mT7svqX-yGg",
+    title: "Dr. Humayun",
+    desc: "A Brief Intro to Hair Transplant Institute "
   });
 
   const handleVideoChange = (video) => {
@@ -26,7 +26,21 @@ const VideoPage = () => {
   ];
 
   const otherServicesVideos = [
-    { id: 4, title: "A Compassionate Facial Plastic Surgeon", duration: "00:55", img: "https://www.youtube.com/embed/51ZVZybuNS8?autoplay=1&mute=1" }
+   
+     { id: 4, title: "Others",  img: "https://www.youtube.com/embed/3TJ9vgxv6Zs" },
+      { id: 5, title: "Others",  img: "https://www.youtube.com/embed/DyumiFOgttM" },
+       { id: 6, title: "Others",  img: "https://www.youtube.com/embed/iELz6UssnUc" },
+        { id: 7, title: "Others",  img: "https://www.youtube.com/embed/J6zlqh96LJ0" },
+         { id: 8, title: "Others",  img: "https://www.youtube.com/embed/8A-hv5NkByA" },
+          { id: 9, title: "Others",  img: "https://www.youtube.com/embed/xAT0MQFkVYA" },
+           { id: 10, title: "Others",  img: "https://www.youtube.com/embed/oqKU8XVFxqI" },
+            { id: 11, title: "Others",  img: "https://www.youtube.com/embed/mObrH0LvvW8" },
+             { id: 12, title: "Others",  img: "https://www.youtube.com/embed/6aUoi4wcx3A" },
+              { id: 13, title: "Others",  img: "https://www.youtube.com/embed/H2ORA7Eiuxw" },
+               { id: 14, title: "Others",  img: "https://www.youtube.com/embed/y5vVwuYFW4w" },
+                { id: 15, title: "Others",  img: "https://www.youtube.com/embed/TbqLvJLCHkc" },
+                 { id: 16, title: "Others", img: "https://www.youtube.com/embed/JaI7C_a21S8" },
+
   ];
 
   const VideoCard = ({ vid }) => (

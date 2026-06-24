@@ -1,6 +1,3 @@
-
-
-
 import React, { useState, useRef } from 'react';
 import './ResultsSection.css';
 import { Link } from 'react-router-dom';
@@ -133,15 +130,30 @@ const ResultCard = ({ item }) => {
 // --- MAIN COMPONENT ---
 const ResultsSection = () => {
   return (
-    <div className="results-section">
-      <h2 className="main-heading">The Results Speak for Themselves</h2>
+    // <div className="results-section">
+    //   <h2 className="main-heading">The Results Speak for Themselves</h2>
       
-      <div className="results-grid">
-        {resultsData.map((item) => (
-          <ResultCard key={item.id} item={item} />
-        ))}
-      </div>
-    </div>
+    //   <div className="results-grid">
+    //     {resultsData.map((item) => (
+    //       <ResultCard key={item.id} item={item} />
+    //     ))}
+    //   </div>
+    // </div>
+
+    <div className="results-section">
+ <div className="results-header">
+    <h2 className="main-heading">The Results Speak for Themselves</h2>
+    <Link to="/gallery" className="btn-see-gallery">
+      See Gallery
+    </Link>
+  </div>
+  
+  <div className="results-grid">
+    {resultsData.map((item) => (
+      <ResultCard key={item.id} item={item} />
+    ))}
+  </div>
+</div>
   );
 };
 
