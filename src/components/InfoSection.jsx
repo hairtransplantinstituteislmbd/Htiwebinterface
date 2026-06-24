@@ -126,15 +126,15 @@ const InfoSection = () => {
         <h2 className="centered-heading">Why Hair Transplant Institute <br/>  Islamabad Is the Best Choice</h2>
         <div className="cards-grid">
           <div className="dark-card">
-            <h3>Care by a Surgeon</h3>
+           <h3 style={{ textAlign: 'center' }}>Care by a Surgeon</h3>
             <p>Procedures like follicular unit extraction (FUE) and Follicular Unit Transplantation(FUT) are often handed off to technicians. At HTI, our surgeons personally perform every stage.</p>
           </div>
           <div className="dark-card">
-            <h3>Expertise</h3>
-            <p>Dr. Humayun combines world-class surgical training with decades of hair restoration expertise.</p>
+            <h3 style={{ textAlign: 'center' }}>Expertise</h3>
+            <p>Dr. Humayun combines world-class surgical training with decades of hair restoration expertise. As a testament to his skill, he is one of only 11 surgeons in the world accredited for a Fellowship in hair restoration surgery by the International Society of Hair Restoration Surgery (ISHRS).</p>
           </div>
           <div className="dark-card">
-            <h3>Results</h3>
+            <h3 style={{ textAlign: 'center' }}>Results</h3>
             <p>Dr. Humayun and Dr. Shahrukh approach hair restoration as an art form. <br/><br/><a href="/gallery">See their natural-looking results in our gallery.</a></p>
           </div>
         </div>
